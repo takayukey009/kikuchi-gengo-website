@@ -35,12 +35,10 @@ nav {
     top: 0;
     z-index: 100;
     background: transparent;
-    transition: background-color 0.3s ease;
 }
 
 nav.scrolled {
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
 }
 
 .logo {
@@ -163,10 +161,9 @@ nav.scrolled {
     z-index: 1001;
     display: flex;
     gap: 10px;
-    background: rgba(26, 26, 26, 0.8);
+    background: #1a1a1a;
     padding: 8px;
     border-radius: 4px;
-    backdrop-filter: blur(4px);
 }
 
 .lang-btn {
