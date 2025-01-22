@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Artisanal Wagyu Croquette - Experience the finest Japanese wagyu beef croquettes in an elegant setting.">
+    <meta name="description" content="Artisanal Wagyu Croquette - Experience the finest Japanese wagyu beef croquettes in an elegant setting." data-translate="meta.description">
     <meta name="keywords" content="wagyu, croquette, menchi katsu, japanese cuisine, fine dining">
-    <meta property="og:title" content="mon - Wagyu Croquette">
-    <meta property="og:description" content="Experience the finest Japanese wagyu beef croquettes in an elegant setting.">
-    <meta property="og:image" content="/kikuchi-gengo-website/images/hero-bg.jpg">
-    <title>mon - Wagyu Croquette</title>
+    <meta property="og:title" content="mon - Wagyu Croquette" data-translate="meta.title">
+    <meta property="og:description" content="Experience the finest Japanese wagyu beef croquettes in an elegant setting." data-translate="meta.description">
+    <meta property="og:image" content="images/hero-bg.jpg">
+    <title data-translate="title">mon - 菊池源吾牛メンチカツ専門店</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Noto+Serif+JP:wght@200;400;600&family=Noto+Serif+JP+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Noto+Serif+JP:wght@200;400;600&family=Noto+Serif+SC:wght@200;400;600&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Preload hero image -->
-    <link rel="preload" as="image" href="/kikuchi-gengo-website/images/hero-bg.jpg">
+    <link rel="preload" as="image" href="images/hero-bg.jpg">
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="zh-CN">简体中文</button>
+    </div>
+
     <nav role="navigation" aria-label="メインナビゲーション">
         <a href="#" class="logo" aria-label="ホーム" data-ja="mon" data-en="mon">mon</a>
         <div class="nav-links">
-            <a href="#about" data-ja="About" data-en="About">About</a>
-            <a href="#menu" data-ja="Menu" data-en="Menu">Menu</a>
-            <a href="#location" data-ja="Location" data-en="Location">Location</a>
-            <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" target="_blank" rel="noopener noreferrer" data-ja="予約" data-en="Reserve">予約</a>
+            <a href="#menu" data-translate="nav.menu" data-ja="メニュー" data-en="Menu">メニュー</a>
+            <a href="#about" data-translate="nav.about" data-ja="私たちについて" data-en="About">私たちについて</a>
+            <a href="#location" data-translate="nav.location" data-ja="アクセス" data-en="Location">アクセス</a>
+            <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" target="_blank" rel="noopener noreferrer" data-translate="nav.reserve" data-ja="予約" data-en="Reserve">予約</a>
         </div>
         <div class="language-switch" role="group" aria-label="言語切り替え">
             <a href="#" class="active" aria-label="日本語">JP</a>
@@ -36,14 +43,14 @@
     </nav>
 
     <main>
-        <div class="hero" role="banner" style="background-image: url('/kikuchi-gengo-website/images/hero-bg.jpg');">
+        <div class="hero" role="banner" style="background-image: url('images/hero-bg.jpg');">
             <h1>
-                <span class="title-line" data-ja="菊池源吾牛メンチカツ" data-en="Kikuchi Gengo Beef">菊池源吾牛メンチカツ</span>
-                <span class="title-line shop-name" data-ja="「門」" data-en="mon">「門」</span>
+                <span class="title-line" data-translate="hero.title" data-ja="菊池源吾牛メンチカツ" data-en="Kikuchi Gengo Beef">菊池源吾牛メンチカツ</span>
+                <span class="title-line shop-name" data-translate="hero.shopName" data-ja="「門」" data-en="mon">「門」</span>
                 <span class="title-line">2025</span>
             </h1>
             <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" class="reservation-btn" aria-label="予約" target="_blank" rel="noopener noreferrer">
-                <span data-ja="食べログで予約" data-en="Reserve on Tabelog">食べログで予約</span>
+                <span data-translate="hero.reserve" data-ja="食べログで予約" data-en="Reserve on Tabelog">食べログで予約</span>
                 <span class="arrow" aria-hidden="true">→</span>
             </a>
             <div class="scroll-indicator" aria-hidden="true">
@@ -54,16 +61,16 @@
 
         <section id="about" class="section about" aria-label="私たちについて">
             <div class="container">
-                <h2 class="section-title" data-ja="About" data-en="About">About</h2>
+                <h2 class="section-title" data-translate="about.title" data-ja="私たちについて" data-en="About">私たちについて</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <h2>About</h2>
-                        <p class="about-description" data-ja="循環型畜産農で完全無添加にこだわり、人にも環境にも優しい黒毛和牛を生産している菊池ユートピアファームのオメガリッチ国産牛「菊池源吾牛」" data-en="Kikuchi Gengo Beef from Kikuchi Utopia Farm, producing additive-free Japanese Black cattle through sustainable farming practices.">
-                            循環型畜産農で完全無添加にこだわり、人にも環境にも優しい黒毛和牛を生産している菊池ユートピアファームのオメガリッチ国産牛「菊池源吾牛」
+                        <h2 data-translate="about.subtitle" data-ja="私たちについて" data-en="About">私たちについて</h2>
+                        <p class="about-description" data-translate="about.description" data-ja="循環型畜産農で完全無添加にこだわり、人にも環境にも優しい黒毛和牛を生産していて菊池ユートピアファームのオメガリッチ国産牛「菊池源吾牛」を使用したメニューを提供しています。" data-en="Kikuchi Gengo Beef from Kikuchi Utopia Farm, producing additive-free Japanese Black cattle through sustainable farming practices.">
+                            循環型畜産農で完全無添加にこだわり、人にも環境にも優しい黒毛和牛を生産していて菊池ユートピアファームのオメガリッチ国産牛「菊池源吾牛」
                         </p>
                     </div>
                     <div class="about-image-container">
-                        <img src="/kikuchi-gengo-website/images/about-img.jpg" alt="調理風景" class="about-image" loading="eager" decoding="sync">
+                        <img src="images/about-img.jpg" alt="調理風景" class="about-image" loading="eager" decoding="sync">
                     </div>
                 </div>
             </div>
@@ -71,20 +78,20 @@
 
         <section id="menu" class="section menu" aria-label="メニュー">
             <div class="container">
-                <h2 class="section-title" data-ja="Menu" data-en="Menu">Menu</h2>
+                <h2 class="section-title" data-translate="menu.title" data-ja="メニュー" data-en="Menu">メニュー</h2>
                 <div class="menu-grid">
                     <article class="menu-item">
                         <div class="menu-image-container">
                             <img 
-                                src="/kikuchi-gengo-website/images/menu-1.jpg" 
-                                alt="菊池源吾牛「門のメンチ」" 
+                                src="images/menu-1.jpg" 
+                                alt="菊池源吾牛メンチカツ" 
                                 class="menu-image" 
-                                loading="eager" 
+                                loading="lazy" 
                                 decoding="async"
                             >
                         </div>
-                        <h3 data-ja="菊池源吾牛「門のメンチ」" data-en="Kikuchi Gengo Beef Menchi">菊池源吾牛「門のメンチ」</h3>
-                        <p class="menu-description" data-ja="菊池源吾牛を100%使用した門の看板メニュー。" data-en="Our signature dish made with 100% Kikuchi Gengo beef.">
+                        <h3 data-translate="menu.item1.title" data-ja="菊池源吾牛メンチカツ" data-en="Kikuchi Gengo Beef Menchi">菊池源吾牛メンチカツ</h3>
+                        <p class="menu-description" data-translate="menu.item1.description" data-ja="菊池源吾牛を100%使用した門の看板メニュー。" data-en="Our signature dish made with 100% Kikuchi Gengo beef.">
                             菊池源吾牛を100%使用した門の看板メニュー。
                         </p>
                         <p class="price">¥3,800</p>
@@ -92,15 +99,15 @@
                     <article class="menu-item">
                         <div class="menu-image-container">
                             <img 
-                                src="/kikuchi-gengo-website/images/menu-2.jpg" 
+                                src="images/menu-2.jpg" 
                                 alt="菊池源吾牛タコライス" 
                                 class="menu-image" 
-                                loading="eager" 
+                                loading="lazy" 
                                 decoding="async"
                             >
                         </div>
-                        <h3 data-ja="菊池源吾牛タコライス" data-en="Kikuchi Gengo Beef Taco Rice">菊池源吾牛タコライス</h3>
-                        <p class="menu-description" data-ja="菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。" data-en="Taco rice featuring premium Kikuchi Gengo ground beef and fresh vegetables.">
+                        <h3 data-translate="menu.item2.title" data-ja="菊池源吾牛タコライス" data-en="Kikuchi Gengo Beef Taco Rice">菊池源吾牛タコライス</h3>
+                        <p class="menu-description" data-translate="menu.item2.description" data-ja="菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。" data-en="Taco rice featuring premium Kikuchi Gengo ground beef and fresh vegetables.">
                             菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。
                         </p>
                         <p class="price">¥1,200</p>
@@ -111,17 +118,17 @@
 
         <section id="location" class="section location" aria-label="アクセス">
             <div class="container">
-                <h2 class="section-title" data-ja="Location" data-en="Location">Location</h2>
+                <h2 class="section-title" data-translate="location.title" data-ja="アクセス" data-en="Location">アクセス</h2>
                 <div class="location-content">
                     <div class="location-info">
                         <address>
-                            <p data-ja="〒151-0051" data-en="151-0051">〒151-0051</p>
-                            <p data-ja="東京都渋谷区千駄ヶ谷2-32-3" data-en="2-32-3 Sendagaya, Shibuya-ku, Tokyo">東京都渋谷区千駄ヶ谷2-32-3</p>
-                            <p data-ja="TEL: 03-XXXX-XXXX" data-en="TEL: +81-3-XXXX-XXXX">TEL: 03-XXXX-XXXX</p>
+                            <p data-translate="location.address1" data-ja="〒151-0051" data-en="151-0051">〒151-0051</p>
+                            <p data-translate="location.address2" data-ja="東京都渋谷区千駄ヶ谷2-32-3" data-en="2-32-3 Sendagaya, Shibuya-ku, Tokyo">東京都渋谷区千駄ヶ谷2-32-3</p>
+                            <p data-translate="location.phone" data-ja="TEL: 03-XXXX-XXXX" data-en="TEL: +81-3-XXXX-XXXX">TEL: 03-XXXX-XXXX</p>
                         </address>
                         <div class="hours">
-                            <p data-ja="営業時間：12:00 - 21:00" data-en="Hours: 12:00 - 21:00">営業時間：12:00 - 21:00</p>
-                            <p data-ja="定休日：水曜日" data-en="Closed: Wednesday">定休日：水曜日</p>
+                            <p data-translate="location.hours" data-ja="営業時間：12:00 - 21:00" data-en="Hours: 12:00 - 21:00">営業時間：12:00 - 21:00</p>
+                            <p data-translate="location.closed" data-ja="定休日：水曜日" data-en="Closed: Wednesday">定休日：水曜日</p>
                         </div>
                     </div>
                     <div class="map" role="region" aria-label="地図">
@@ -139,31 +146,32 @@
             </div>
         </section>
 
-        <section id="reservation" class="section reservation" aria-label="ご予約">
+        <section id="instagram" class="section instagram">
             <div class="container">
-                <h2 class="section-title" data-ja="予約" data-en="Reservation">Reservation</h2>
-                <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" class="reservation-btn" aria-label="予約" target="_blank" rel="noopener noreferrer">
-                    <span data-ja="食べログで予約" data-en="Reserve on Tabelog">食べログで予約</span>
-                    <span class="arrow" aria-hidden="true">→</span>
-                </a>
+                <h2 class="section-title" data-translate="instagram.title">Instagram</h2>
+                <div class="instagram-feed">
+                    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                    <div class="elfsight-app-a3304d18-6ed1-4a85-a423-d28338ff0391" data-elfsight-app-lazy></div>
+                </div>
             </div>
         </section>
-    </main>
 
-    <div class="social-links" aria-label="SNSリンク">
-        <a href="https://www.instagram.com/mon_beef/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-    </div>
-
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">mon</div>
-                <p class="footer-copyright">&copy; 2025 mon. All rights reserved.</p>
-            </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/mon_beef/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
         </div>
-    </footer>
 
-    <script src="script.js" defer></script>
-</body>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">mon</div>
+                    <p class="footer-copyright" data-translate="footer.copyright">&copy; 2025 mon. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Language Scripts -->
+        <script src="js/translations.js"></script>
+        <script src="js/language-switcher.js"></script>
+    </body>
 </html>
