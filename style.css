@@ -64,20 +64,46 @@ nav.scrolled {
 }
 
 .language-switch {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     display: flex;
     gap: 0.5rem;
+    z-index: 1000;
 }
 
-.language-switch a {
-    color: var(--secondary-color);
-    text-decoration: none;
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
     font-size: 0.9rem;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
-.language-switch a.active {
-    opacity: 1;
+.lang-btn:hover {
+    background: var(--text-color);
+    color: var(--background-color);
+}
+
+.lang-btn.active {
+    background: var(--text-color);
+    color: var(--background-color);
+}
+
+/* Responsive adjustments for language switcher */
+@media (max-width: 768px) {
+    .language-switch {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .lang-btn {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.8rem;
+    }
 }
 
 /* Language Switcher */

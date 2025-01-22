@@ -21,26 +21,22 @@
     <link rel="preload" as="image" href="images/hero-bg.jpg">
 </head>
 <body>
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-        <button class="lang-btn active" data-lang="ja">日本語</button>
-        <button class="lang-btn" data-lang="en">English</button>
-        <button class="lang-btn" data-lang="zh-CN">简体中文</button>
-    </div>
-
-    <nav role="navigation" aria-label="メインナビゲーション">
-        <a href="#" class="logo" aria-label="ホーム" data-ja="mon" data-en="mon">mon</a>
-        <div class="nav-links">
-            <a href="#menu" data-translate="nav.menu" data-ja="メニュー" data-en="Menu">メニュー</a>
-            <a href="#about" data-translate="nav.about" data-ja="私たちについて" data-en="About">私たちについて</a>
-            <a href="#location" data-translate="nav.location" data-ja="アクセス" data-en="Location">アクセス</a>
-            <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" target="_blank" rel="noopener noreferrer" data-translate="nav.reserve" data-ja="予約" data-en="Reserve">予約</a>
-        </div>
+    <header>
         <div class="language-switch" role="group" aria-label="言語切り替え">
-            <a href="#" class="active" aria-label="日本語">JP</a>
-            <a href="#" aria-label="English">EN</a>
+            <button class="lang-btn active" data-lang="ja">日本語</button>
+            <button class="lang-btn" data-lang="en">English</button>
+            <button class="lang-btn" data-lang="zh-CN">中文</button>
         </div>
-    </nav>
+        <nav role="navigation" aria-label="メインナビゲーション">
+            <a href="#" class="logo" aria-label="ホーム" data-ja="mon" data-en="mon">mon</a>
+            <div class="nav-links">
+                <a href="#menu" data-translate="nav.menu" data-ja="メニュー" data-en="Menu">メニュー</a>
+                <a href="#about" data-translate="nav.about" data-ja="私たちについて" data-en="About">私たちについて</a>
+                <a href="#location" data-translate="nav.location" data-ja="アクセス" data-en="Location">アクセス</a>
+                <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" target="_blank" rel="noopener noreferrer" data-translate="nav.reserve" data-ja="予約" data-en="Reserve">予約</a>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <div class="hero" role="banner" style="background-image: url('images/hero-bg.jpg');">
