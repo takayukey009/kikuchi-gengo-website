@@ -27,7 +27,6 @@ body {
 /* Navigation */
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     position: fixed;
@@ -37,22 +36,17 @@ nav {
     background: transparent;
 }
 
-nav.scrolled {
-    background-color: transparent;
-}
-
 .logo {
     font-size: 1.5rem;
     color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
+    margin-right: 2rem;
 }
 
 .nav-links {
     display: flex;
     gap: 2rem;
-    margin-left: auto;
-    margin-right: 2rem;
 }
 
 .nav-links a {
@@ -62,6 +56,7 @@ nav.scrolled {
     position: relative;
     padding: 0.5rem 0;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -132,9 +127,12 @@ nav.scrolled {
         padding: 1rem;
     }
 
+    .logo {
+        margin-right: 1.5rem;
+    }
+
     .nav-links {
         gap: 1.5rem;
-        margin-right: 1rem;
     }
 
     .nav-links a {
@@ -143,9 +141,12 @@ nav.scrolled {
 }
 
 @media (max-width: 480px) {
+    .logo {
+        margin-right: 1rem;
+    }
+
     .nav-links {
         gap: 1rem;
-        margin-right: 0.5rem;
     }
 
     .nav-links a {
