@@ -7,40 +7,43 @@
     <meta name="keywords" content="wagyu, croquette, menchi katsu, japanese cuisine, fine dining">
     <meta property="og:title" content="mon - Wagyu Croquette">
     <meta property="og:description" content="Experience the finest Japanese wagyu beef croquettes in an elegant setting.">
-    <meta property="og:image" content="hero-bg.jpg">
+    <meta property="og:image" content="images/hero-bg.jpg">
     <title>mon - Wagyu Croquette</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Noto+Serif+JP:wght@200;400;600&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Noto+Serif+JP:wght@200;400;600&family=Noto+Serif+JP+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Preload hero image -->
-    <link rel="preload" as="image" href="hero-bg.jpg">
+    <link rel="preload" as="image" href="images/hero-bg.jpg">
 </head>
 <body>
-    <nav aria-label="メインナビゲーション">
-        <div class="logo" role="banner">mon</div>
+    <nav role="navigation" aria-label="メインナビゲーション">
+        <a href="#" class="logo" aria-label="ホーム" data-ja="mon" data-en="mon">mon</a>
         <div class="nav-links">
-            <a href="#about" aria-label="私たちについて" data-ja="About" data-en="About">About</a>
-            <a href="#menu" aria-label="メニュー" data-ja="Menu" data-en="Menu">Menu</a>
-            <a href="#location" aria-label="アクセス" data-ja="Location" data-en="Location">Location</a>
-            <a href="#reservation" aria-label="ご予約" data-ja="Reservation" data-en="Reservation">Reservation</a>
+            <a href="#about" data-ja="About" data-en="About">About</a>
+            <a href="#menu" data-ja="Menu" data-en="Menu">Menu</a>
+            <a href="#location" data-ja="Location" data-en="Location">Location</a>
+            <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" target="_blank" rel="noopener noreferrer" data-ja="予約" data-en="Reserve">予約</a>
         </div>
-        <div class="language-switch" role="navigation" aria-label="言語切替">
+        <div class="language-switch" role="group" aria-label="言語切り替え">
             <a href="#" class="active" aria-label="日本語">JP</a>
-            <span aria-hidden="true">/</span>
             <a href="#" aria-label="English">EN</a>
         </div>
     </nav>
 
     <main>
-        <div class="hero" role="banner">
-            <div class="temperature" aria-label="現在の気温">23℃</div>
-            <h1>Artisanal<br>Wagyu Croquette<br>2025</h1>
-            <a href="#reservation" class="reservation-btn" aria-label="予約ページへ">
-                <span class="jp">ご予約はこちら</span>
-                <span class="en">Make a Reservation</span>
+        <div class="hero" role="banner" style="background-image: url('images/hero-bg.jpg');">
+            <h1>
+                <span class="title-line" data-ja="菊池源吾牛メンチカツ" data-en="Kikuchi Gengo Beef">菊池源吾牛メンチカツ</span>
+                <span class="title-line shop-name" data-ja="「門」" data-en="mon">「門」</span>
+                <span class="title-line">2025</span>
+            </h1>
+            <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" class="reservation-btn" aria-label="予約" target="_blank" rel="noopener noreferrer">
+                <span data-ja="食べログで予約" data-en="Reserve on Tabelog">食べログで予約</span>
                 <span class="arrow" aria-hidden="true">→</span>
             </a>
             <div class="scroll-indicator" aria-hidden="true">
@@ -51,15 +54,16 @@
 
         <section id="about" class="section about" aria-label="私たちについて">
             <div class="container">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title" data-ja="About" data-en="About">About</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p class="jp" data-ja="最高級の和牛を使用した、芸術的なメンチカツの探求。" data-en="Exploring the artistry of premium wagyu croquettes.">最高級の和牛を使用した、芸術的なメンチカツの探求。</p>
-                        <p class="en" data-ja="Exploring the artistry of premium wagyu croquettes." data-en="Exploring the artistry of premium wagyu croquettes.">Exploring the artistry of premium wagyu croquettes.</p>
-                        <p class="description" data-ja="A5ランクの和牛を贅沢に使用し、伝統的な技法と現代的なアプローチを融合させた新しいメンチカツの形を提案します。" data-en="We present a new form of croquette that combines traditional techniques with modern approaches, using luxurious A5-ranked wagyu beef.">A5ランクの和牛を贅沢に使用し、伝統的な技法と現代的なアプローチを融合させた新しいメンチカツの形を提案します。</p>
+                        <h2>About</h2>
+                        <p class="about-description" data-ja="循環型畜産農で完全無添加にこだわり、人にも環境にも優しい黒毛和牛を生産している菊池ユートピアファームのオメガリッチ国産牛「菊池源吾牛」" data-en="Kikuchi Gengo Beef from Kikuchi Utopia Farm, producing additive-free Japanese Black cattle through sustainable farming practices.">
+                            循環型畜産農で完全無添加にこだわり、人にも環境にも優しい黒毛和牛を生産している菊池ユートピアファームのオメガリッチ国産牛「菊池源吾牛」
+                        </p>
                     </div>
                     <div class="about-image-container">
-                        <img src="about-img.jpg" alt="調理風景" class="about-image" loading="eager" decoding="sync" onerror="console.error('Failed to load image:', this.src);">
+                        <img src="images/about-img.jpg" alt="調理風景" class="about-image" loading="eager" decoding="sync" onerror="console.error('Error loading about image:', this.src);">
                     </div>
                 </div>
             </div>
@@ -67,25 +71,39 @@
 
         <section id="menu" class="section menu" aria-label="メニュー">
             <div class="container">
-                <h2 class="section-title">Menu</h2>
+                <h2 class="section-title" data-ja="Menu" data-en="Menu">Menu</h2>
                 <div class="menu-grid">
                     <article class="menu-item">
                         <div class="menu-image-container">
-                            <img src="menu-1.jpg" alt="特選和牛メンチカツ" class="menu-image" loading="eager" decoding="sync" onerror="console.error('Failed to load image:', this.src);">
+                            <img 
+                                src="images/menu-1.jpg" 
+                                alt="菊池源吾牛「門のメンチ」" 
+                                class="menu-image" 
+                                loading="eager" 
+                                decoding="async"
+                            >
                         </div>
-                        <h3 data-ja="特選和牛メンチカツ" data-en="Premium Wagyu Croquette">特選和牛メンチカツ</h3>
-                        <p class="en">Premium Wagyu Croquette</p>
-                        <p class="description" data-ja="A5ランク和牛を贅沢に使用した看板メニュー" data-en="Our signature dish featuring A5-ranked wagyu beef">A5ランク和牛を贅沢に使用した看板メニュー</p>
+                        <h3 data-ja="菊池源吾牛「門のメンチ」" data-en="Kikuchi Gengo Beef Menchi">菊池源吾牛「門のメンチ」</h3>
+                        <p class="menu-description" data-ja="菊池源吾牛を100%使用した門の看板メニュー。" data-en="Our signature dish made with 100% Kikuchi Gengo beef.">
+                            菊池源吾牛を100%使用した門の看板メニュー。
+                        </p>
                         <p class="price">¥3,800</p>
                     </article>
                     <article class="menu-item">
                         <div class="menu-image-container">
-                            <img src="menu-2.jpg" alt="和牛タコライス" class="menu-image" loading="eager" decoding="sync" onerror="console.error('Failed to load image:', this.src);">
+                            <img 
+                                src="images/menu-2.jpg" 
+                                alt="菊池源吾牛タコライス" 
+                                class="menu-image" 
+                                loading="eager" 
+                                decoding="async"
+                            >
                         </div>
-                        <h3 data-ja="和牛タコライス" data-en="Wagyu Taco Rice">和牛タコライス</h3>
-                        <p class="en">Wagyu Taco Rice</p>
-                        <p class="description" data-ja="和牛と沖縄の味わいが織りなす新しい出会い" data-en="A fusion of wagyu beef and Okinawan flavors">和牛と沖縄の味わいが織りなす新しい出会い</p>
-                        <p class="price">¥2,800</p>
+                        <h3 data-ja="菊池源吾牛タコライス" data-en="Kikuchi Gengo Beef Taco Rice">菊池源吾牛タコライス</h3>
+                        <p class="menu-description" data-ja="菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。" data-en="Taco rice featuring premium Kikuchi Gengo ground beef and fresh vegetables.">
+                            菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。
+                        </p>
+                        <p class="price">¥1,200</p>
                     </article>
                 </div>
             </div>
@@ -93,12 +111,12 @@
 
         <section id="location" class="section location" aria-label="アクセス">
             <div class="container">
-                <h2 class="section-title">Location</h2>
+                <h2 class="section-title" data-ja="Location" data-en="Location">Location</h2>
                 <div class="location-content">
                     <div class="location-info">
                         <address>
                             <p data-ja="〒151-0051" data-en="151-0051">〒151-0051</p>
-                            <p data-ja="東京都渋谷区千駄ヶ谷1-2-3" data-en="1-2-3 Sendagaya, Shibuya-ku, Tokyo">東京都渋谷区千駄ヶ谷1-2-3</p>
+                            <p data-ja="東京都渋谷区千駄ヶ谷2-32-3" data-en="2-32-3 Sendagaya, Shibuya-ku, Tokyo">東京都渋谷区千駄ヶ谷2-32-3</p>
                             <p data-ja="TEL: 03-XXXX-XXXX" data-en="TEL: +81-3-XXXX-XXXX">TEL: 03-XXXX-XXXX</p>
                         </address>
                         <div class="hours">
@@ -108,7 +126,7 @@
                     </div>
                     <div class="map" role="region" aria-label="地図">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828030556512!2d139.70962687677547!3d35.68161617258405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cc5d0abc821%3A0x7e0846bcee15898d!2z5Y2D6aeE44Kx6LC344O75YWt6YCa5aCC!5e0!3m2!1sja!2sjp!4v1705823636037!5m2!1sja!2sjp"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7374661466387!2d139.70901847677552!3d35.68343997258386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cc5c5b052c3%3A0x1c3ba5c5db97b636!2z44CSMTUxLTAwNTEg5p2x5Lqs6YO95riL6LC35Yy65Y2D6aeE44Kx6LC3Mu-8k--8ku-8k!5e0!3m2!1sja!2sjp!4v1705832777775!5m2!1sja!2sjp"
                             width="100%"
                             height="450"
                             style="border:0;"
@@ -123,50 +141,17 @@
 
         <section id="reservation" class="section reservation" aria-label="ご予約">
             <div class="container">
-                <h2 class="section-title">Reservation</h2>
-                <form class="reservation-form" action="/submit-reservation" method="POST">
-                    <div class="form-group">
-                        <label for="name" data-ja="お名前" data-en="Name">お名前</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="email" data-ja="メールアドレス" data-en="Email">メールアドレス</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="date" data-ja="ご予約日" data-en="Date">ご予約日</label>
-                        <input type="date" id="date" name="date" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="time" data-ja="ご予約時間" data-en="Time">ご予約時間</label>
-                        <select id="time" name="time" required aria-required="true">
-                            <option value="" data-ja="選択してください" data-en="Please select">選択してください</option>
-                            <option value="12:00">12:00</option>
-                            <option value="13:00">13:00</option>
-                            <option value="14:00">14:00</option>
-                            <option value="17:00">17:00</option>
-                            <option value="18:00">18:00</option>
-                            <option value="19:00">19:00</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="guests" data-ja="人数" data-en="Number of Guests">人数</label>
-                        <select id="guests" name="guests" required aria-required="true">
-                            <option value="" data-ja="選択してください" data-en="Please select">選択してください</option>
-                            <option value="1" data-ja="1名" data-en="1 person">1名</option>
-                            <option value="2" data-ja="2名" data-en="2 people">2名</option>
-                            <option value="3" data-ja="3名" data-en="3 people">3名</option>
-                            <option value="4" data-ja="4名" data-en="4 people">4名</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="submit-btn" data-ja="予約する" data-en="Make Reservation">予約する</button>
-                </form>
+                <h2 class="section-title" data-ja="予約" data-en="Reservation">Reservation</h2>
+                <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" class="reservation-btn" aria-label="予約" target="_blank" rel="noopener noreferrer">
+                    <span data-ja="食べログで予約" data-en="Reserve on Tabelog">食べログで予約</span>
+                    <span class="arrow" aria-hidden="true">→</span>
+                </a>
             </div>
         </section>
     </main>
 
     <div class="social-links" aria-label="SNSリンク">
-        <a href="https://www.instagram.com/mon_beef/p/DB0an7rTg5I/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/mon_beef/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
     </div>
 
