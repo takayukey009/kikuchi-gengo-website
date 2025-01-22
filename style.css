@@ -34,16 +34,27 @@ nav {
     top: 0;
     z-index: 100;
     background: transparent;
+    transition: all 0.3s ease;
+}
+
+nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
-    color: var(--text-color);
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
     margin-right: 3rem;
     letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+nav.scrolled .logo {
+    color: #000;
 }
 
 .nav-links {
@@ -52,7 +63,7 @@ nav {
 }
 
 .nav-links a {
-    color: var(--text-color);
+    color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
     position: relative;
@@ -63,9 +74,17 @@ nav {
     font-weight: 400;
 }
 
+nav.scrolled .nav-links a {
+    color: #000;
+}
+
 .nav-links a:hover {
-    color: var(--primary-color);
+    color: rgba(255, 255, 255, 0.8);
     transform: translateY(-2px);
+}
+
+nav.scrolled .nav-links a:hover {
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .nav-links a::after {
@@ -75,9 +94,13 @@ nav {
     height: 1px;
     bottom: 0;
     left: 0;
-    background-color: var(--primary-color);
-    transition: width 0.3s ease;
+    background-color: #fff;
+    transition: all 0.3s ease;
     opacity: 0.7;
+}
+
+nav.scrolled .nav-links a::after {
+    background-color: #000;
 }
 
 .nav-links a:hover::after {
