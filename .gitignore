@@ -1,5 +1,6 @@
 .vercel
+anthropic-quickstarts
+mon-menchi
 node_modules
-.env
-desktop.ini
-anthropic-quickstarts/
+.DS_Store
+vercel.json
