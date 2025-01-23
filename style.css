@@ -179,86 +179,100 @@ body {
     }
 }
 
-/* Chinese font support */
-[lang="zh-CN"] {
-    font-family: 'Noto Serif SC', serif;
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem 0;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        order: 1;
+    }
+
+    .language-switcher {
+        order: 2;
+        margin: 0;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.5rem 0;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none; /* Chrome, Safari and Opera */
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        white-space: nowrap;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .lang-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 0.8rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .lang-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
+    height: 100vh;
+    background-image: url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    color: var(--secondary-color);
-    padding: 0 1rem;
-}
-
-.hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    margin-bottom: 2rem;
-}
-
-.title-line {
-    display: block;
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-}
-
-.shop-name {
-    font-size: 3.5rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    color: #d4af37;  /* 金色 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero .title-line:last-child {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.reservation-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 2rem;
-    background-color: transparent;
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 2rem;
-}
-
-.reservation-btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-.scroll-indicator {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    color: var(--secondary-color);
-    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px; /* Add padding for fixed header */
 }
 
-.scroll-indicator i {
-    animation: bounce 2s infinite;
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 120px;
+    }
+}
+
+/* Chinese font support */
+[lang="zh-CN"] {
+    font-family: 'Noto Serif SC', serif;
 }
 
 /* Sections */
