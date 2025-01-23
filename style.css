@@ -420,8 +420,16 @@ body {
     }
 }
 
-/* Chinese font support */
-[lang="zh-CN"] {
+/* Language-specific styles */
+[lang="ja"] {
+    font-family: 'Noto Serif JP', serif;
+}
+
+[lang="en"] {
+    font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+}
+
+[lang="zh"] {
     font-family: 'Noto Serif SC', serif;
 }
 

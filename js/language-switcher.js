@@ -1,10 +1,10 @@
 // 現在の言語を保存
-let currentLang = localStorage.getItem('preferred-language') || 'ja';
+let currentLang = localStorage.getItem('language') || 'ja';
 
 // 言語切り替え関数
 function switchLanguage(lang) {
     currentLang = lang;
-    localStorage.setItem('preferred-language', lang);
+    localStorage.setItem('language', lang);
     document.documentElement.lang = lang; // HTML langを更新
     updateContent();
     updateLanguageButtons();
@@ -44,16 +44,47 @@ function updateContent() {
 }
 
 // イベントリスナーの設定
-document.addEventListener('DOMContentLoaded', () => {
-    // 言語ボタンにクリックイベントを追加
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            switchLanguage(btn.dataset.lang);
+document.addEventListener('DOMContentLoaded', function() {
+    const languageButtons = document.querySelectorAll('.lang-btn');
+    const defaultLanguage = 'ja';
+    
+    // Set initial language
+    setLanguage(localStorage.getItem('language') || defaultLanguage);
+
+    // Language button click handlers
+    languageButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const language = this.getAttribute('data-lang');
+            setLanguage(language);
         });
     });
 
-    // 初期言語を設定
-    document.documentElement.lang = currentLang;
-    updateContent();
-    updateLanguageButtons();
+    function setLanguage(language) {
+        // Update active button state
+        languageButtons.forEach(button => {
+            if (button.getAttribute('data-lang') === language) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+
+        // Save language preference
+        localStorage.setItem('language', language);
+
+        // Set document language for proper font rendering
+        document.documentElement.lang = language;
+
+        // Update all translatable elements
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            if (translations[language] && translations[language][key]) {
+                if (element.tagName === 'META') {
+                    element.setAttribute('content', translations[language][key]);
+                } else {
+                    element.textContent = translations[language][key];
+                }
+            }
+        });
+    }
 });
