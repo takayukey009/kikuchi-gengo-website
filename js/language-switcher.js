@@ -1,19 +1,38 @@
 // 現在の言語を保存
 let currentLang = localStorage.getItem('language') || 'ja';
 
+// ネストされたオブジェクトから値を取得する関数
+function getNestedTranslation(obj, path) {
+    return path.split('.').reduce((prev, curr) => {
+        return prev ? prev[curr] : undefined;
+    }, obj);
+}
+
 // 言語切り替え関数
 function switchLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('language', lang);
-    document.documentElement.lang = lang; // HTML langを更新
-    updateContent();
-    updateLanguageButtons();
-}
+    document.documentElement.lang = lang;
+    
+    // 全ての翻訳可能な要素を更新
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const translationKey = element.getAttribute('data-translate');
+        const translation = getNestedTranslation(translations[currentLang], translationKey);
+        
+        if (translation !== undefined) {
+            if (element.tagName === 'META') {
+                element.setAttribute('content', translation);
+            } else {
+                element.textContent = translation;
+            }
+        } else {
+            console.warn(`Translation missing for key: ${translationKey} in language: ${currentLang}`);
+        }
+    });
 
-// 言語ボタンのアクティブ状態を更新
-function updateLanguageButtons() {
+    // 言語ボタンの状態を更新
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        if (btn.dataset.lang === currentLang) {
+        if (btn.getAttribute('data-lang') === currentLang) {
             btn.classList.add('active');
         } else {
             btn.classList.remove('active');
@@ -21,70 +40,16 @@ function updateLanguageButtons() {
     });
 }
 
-// テキストコンテンツを更新
-function updateContent() {
-    // data-translate属性を持つ全要素を更新
-    document.querySelectorAll('[data-translate]').forEach(element => {
-        const translationKey = element.dataset.translate;
-        const keys = translationKey.split('.');
-        let translation = translations[currentLang];
-        
-        // ネストされたオブジェクトから翻訳を取得
-        for (const key of keys) {
-            if (translation && translation[key]) {
-                translation = translation[key];
-            } else {
-                console.warn(`Translation missing for key: ${translationKey} in language: ${currentLang}`);
-                return;
-            }
-        }
-        
-        element.textContent = translation;
-    });
-}
-
-// イベントリスナーの設定
+// DOMContentLoadedイベントリスナー
 document.addEventListener('DOMContentLoaded', function() {
-    const languageButtons = document.querySelectorAll('.lang-btn');
-    const defaultLanguage = 'ja';
-    
-    // Set initial language
-    setLanguage(localStorage.getItem('language') || defaultLanguage);
+    // 初期言語を設定
+    switchLanguage(currentLang);
 
-    // Language button click handlers
-    languageButtons.forEach(button => {
+    // 言語ボタンのクリックハンドラーを設定
+    document.querySelectorAll('.lang-btn').forEach(button => {
         button.addEventListener('click', function() {
             const language = this.getAttribute('data-lang');
-            setLanguage(language);
+            switchLanguage(language);
         });
     });
-
-    function setLanguage(language) {
-        // Update active button state
-        languageButtons.forEach(button => {
-            if (button.getAttribute('data-lang') === language) {
-                button.classList.add('active');
-            } else {
-                button.classList.remove('active');
-            }
-        });
-
-        // Save language preference
-        localStorage.setItem('language', language);
-
-        // Set document language for proper font rendering
-        document.documentElement.lang = language;
-
-        // Update all translatable elements
-        document.querySelectorAll('[data-translate]').forEach(element => {
-            const key = element.getAttribute('data-translate');
-            if (translations[language] && translations[language][key]) {
-                if (element.tagName === 'META') {
-                    element.setAttribute('content', translations[language][key]);
-                } else {
-                    element.textContent = translations[language][key];
-                }
-            }
-        });
-    }
 });
