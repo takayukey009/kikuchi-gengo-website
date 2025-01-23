@@ -457,79 +457,129 @@ body {
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 2rem 0;
+}
+
+.about-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-bottom: 3rem;
 }
 
 .about-text {
-    margin-bottom: 3rem;
-    line-height: 1.8;
+    order: 1;
 }
 
-.about-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.about-image-container {
+    order: 2;
+    position: relative;
 }
 
-.feature {
-    padding: 1.5rem;
-    background: #fff;
+.about-image {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.feature h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+.about-description {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 1.6;
     color: var(--primary-color);
 }
 
-.feature p {
+.about-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.about-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.feature-list {
+    list-style: none;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.feature-list li {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.feature-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.feature-description {
+    color: #666;
     line-height: 1.6;
 }
 
+@media (max-width: 992px) {
+    .about-main {
+        gap: 2rem;
+    }
+    
+    .about-description {
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 768px) {
-    .about {
-        padding: 4rem 0;
+    .about-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .about-text {
-        margin-bottom: 2rem;
-        line-height: 1.6;
+        order: 2;
     }
 
-    .about-features {
-        gap: 1.5rem;
+    .about-image-container {
+        order: 1;
     }
 
-    .feature {
-        padding: 1.25rem;
+    .about-section {
+        padding: 1.5rem;
+    }
+
+    .about-description {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-list {
+        gap: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .about {
-        padding: 3rem 0;
-    }
-
-    .about-text {
-        margin-bottom: 1.5rem;
-        line-height: 1.5;
-    }
-
-    .about-features {
-        gap: 1rem;
-    }
-
-    .feature {
+    .about-section {
         padding: 1rem;
     }
 
-    .feature h3 {
+    .about-section h3 {
         font-size: 1.1rem;
-        margin-bottom: 0.75rem;
+    }
+
+    .feature-label {
+        font-size: 1rem;
     }
 }
 
