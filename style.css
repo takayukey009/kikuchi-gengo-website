@@ -30,9 +30,14 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.scrolled {
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
     backdrop-filter: blur(5px);
 }
 
@@ -52,9 +57,14 @@ body {
 .logo {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: #fff;
     text-decoration: none;
     font-family: 'Noto Serif JP', serif;
+    transition: color 0.3s ease;
+}
+
+.header.scrolled .logo {
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -64,13 +74,17 @@ body {
 }
 
 .nav-link {
-    color: var(--text-color);
+    color: #fff;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     padding: 0.5rem;
     transition: color 0.3s ease;
     position: relative;
+}
+
+.header.scrolled .nav-link {
+    color: var(--text-color);
 }
 
 .nav-link::after {
@@ -80,12 +94,20 @@ body {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: #fff;
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
 
+.header.scrolled .nav-link::after {
+    background-color: var(--primary-color);
+}
+
 .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.header.scrolled .nav-link:hover {
     color: var(--primary-color);
 }
 
@@ -100,19 +122,30 @@ body {
 
 .lang-btn {
     padding: 0.5rem 1rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #fff;
     background: none;
-    color: var(--primary-color);
+    color: #fff;
     cursor: pointer;
     border-radius: 4px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
+.header.scrolled .lang-btn {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
 .lang-btn:hover,
 .lang-btn.active {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.header.scrolled .lang-btn:hover,
+.header.scrolled .lang-btn.active {
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
 }
 
 @media (max-width: 992px) {
