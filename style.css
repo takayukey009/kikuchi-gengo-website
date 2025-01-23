@@ -382,6 +382,10 @@ body {
 
     .title-line {
         font-size: 2.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
     }
 
     .shop-name {
@@ -820,6 +824,10 @@ body {
 @media (max-width: 768px) {
     .title-line {
         font-size: 2.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
     }
     
     .shop-name {
