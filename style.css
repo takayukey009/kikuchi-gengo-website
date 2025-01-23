@@ -482,77 +482,80 @@ nav.scrolled .nav-links a::after {
 
 /* Menu Section */
 .menu {
-    background-color: #f9f9f9;
-    padding: 6rem 2rem;
+    background-color: var(--background-color);
+    padding: 4rem 0;
 }
 
-.menu-grid {
+.menu-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 4rem;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
 .menu-item {
-    text-align: center;
-    background: #ffffff;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    max-width: 500px;
-    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .menu-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
-}
-
-.menu-image-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto 2rem;
-    min-height: 300px;
-    overflow: hidden;
-    border-radius: 8px;
 }
 
 .menu-image {
     width: 100%;
-    min-height: 300px;
+    height: 250px;
     object-fit: cover;
-    display: block;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
 }
 
-.menu-item:hover .menu-image {
-    transform: scale(1.05);
+.menu-content {
+    padding: 1.5rem;
 }
 
-.menu-item h3 {
-    font-size: 1.8rem;
+.menu-content h3 {
+    font-size: 1.4rem;
+    color: var(--text-color);
     margin-bottom: 1rem;
-    font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+    font-weight: 600;
+}
+
+.menu-content p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.menu-content .price {
+    font-size: 1.2rem;
+    font-weight: 600;
     color: var(--primary-color);
 }
 
-.menu-description {
-    color: #666;
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    font-size: 1.1rem;
-}
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
 
-.price {
-    font-size: 1.4rem;
-    color: var(--accent-color);
-    margin: 1rem 0;
-    font-weight: 500;
-    font-family: 'Cormorant Garamond', serif;
+    .menu-image {
+        height: 200px;
+    }
+
+    .menu-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu-content p {
+        font-size: 1rem;
+    }
+
+    .menu-content .price {
+        font-size: 1.1rem;
+    }
 }
 
 /* Location Section */

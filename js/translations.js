@@ -43,11 +43,16 @@ const translations = {
             }
         },
         menu: {
-            title: 'メニュー',
-            menchi: 'メンチカツ',
-            menchiSet: 'メンチカツ定食',
-            curry: 'カレー',
-            description: '厳選された菊池源吾牛を使用し、職人の技で仕上げた極上のメンチカツ'
+            menchikatsu: {
+                title: '菊池源吾牛メンチカツ',
+                description: '菊池源吾牛を100%使用した門の看板メニュー。',
+                price: '¥3,800'
+            },
+            tacorice: {
+                title: '菊池源吾牛タコライス',
+                description: '菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。',
+                price: '¥1,200'
+            }
         },
         location: {
             title: 'アクセス',
@@ -111,11 +116,16 @@ const translations = {
             }
         },
         menu: {
-            title: 'Menu',
-            menchi: 'Beef Croquette',
-            menchiSet: 'Croquette Set',
-            curry: 'Curry',
-            description: 'Premium croquettes crafted by our skilled chefs using carefully selected Kikuchi Gengo Beef'
+            menchikatsu: {
+                title: 'Kikuchi Gengo Beef Menchi Katsu',
+                description: 'Our signature dish made with 100% Kikuchi Gengo beef.',
+                price: '¥3,800'
+            },
+            tacorice: {
+                title: 'Kikuchi Gengo Beef Taco Rice',
+                description: 'A fusion dish featuring Kikuchi Gengo ground beef and fresh vegetables.',
+                price: '¥1,200'
+            }
         },
         location: {
             title: 'Location',
@@ -179,11 +189,16 @@ const translations = {
             }
         },
         menu: {
-            title: '菜单',
-            menchi: '牛肉可乐饼',
-            menchiSet: '牛肉可乐饼套餐',
-            curry: '咖喱',
-            description: '使用精选的菊池源吾牛肉，由专业师傅精心制作的顶级牛肉可乐饼'
+            menchikatsu: {
+                title: '菊池源吾牛肉饼',
+                description: '使用100%菊池源吾牛肉制作的本店招牌菜品。',
+                price: '¥3,800'
+            },
+            tacorice: {
+                title: '菊池源吾牛肉塔可饭',
+                description: '使用菊池源吾牛肉末和新鲜蔬菜制作的和牛塔可饭。',
+                price: '¥1,200'
+            }
         },
         location: {
             title: '位置',
