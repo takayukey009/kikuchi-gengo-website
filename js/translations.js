@@ -37,6 +37,9 @@ const translations = {
         instagram: {
             title: 'Instagram'
         },
+        reviews: {
+            title: 'お客様の声'
+        },
         footer: {
             // Add footer translations here
         }
@@ -79,6 +82,9 @@ const translations = {
         instagram: {
             title: 'Instagram'
         },
+        reviews: {
+            title: 'Customer Reviews'
+        },
         footer: {
             // Add footer translations here
         }
@@ -120,6 +126,9 @@ const translations = {
         },
         instagram: {
             title: 'Instagram'
+        },
+        reviews: {
+            title: '顾客评价'
         },
         footer: {
             // Add footer translations here
