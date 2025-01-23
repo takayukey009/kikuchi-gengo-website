@@ -343,10 +343,11 @@ nav.scrolled .nav-links a::after {
 }
 
 .about-description {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     color: var(--primary-color);
+    line-height: 1.4;
 }
 
 .about-image-container {
@@ -367,21 +368,60 @@ nav.scrolled .nav-links a::after {
 }
 
 .about-section {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .about-section h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: var(--text-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
 }
 
-.about-section p {
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feature-label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-right: 1rem;
+    min-width: 140px;
+}
+
+.feature-description {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.farming-intro {
     font-size: 1.1rem;
     line-height: 1.8;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--text-color);
+}
+
+.philosophy-message {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    text-align: center;
+    font-style: italic;
+    padding: 1rem 0;
 }
 
 /* Responsive adjustments for about section */
@@ -396,23 +436,39 @@ nav.scrolled .nav-links a::after {
         max-width: 600px;
         margin: 0 auto;
     }
+
+    .feature-list li {
+        flex-direction: column;
+    }
+
+    .feature-label {
+        margin-bottom: 0.5rem;
+    }
 }
 
 @media (max-width: 768px) {
     .about-description {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+    }
+
+    .about-section {
+        padding: 1.5rem;
     }
 
     .about-section h3 {
         font-size: 1.2rem;
     }
 
-    .about-section p {
+    .feature-description {
         font-size: 1rem;
     }
 
     .about-image-container {
         padding-top: 66.67%;
+    }
+
+    .philosophy-message {
+        font-size: 1.1rem;
     }
 }
 
