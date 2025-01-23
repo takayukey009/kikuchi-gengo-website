@@ -29,10 +29,10 @@ const translations = {
         location: {
             title: 'アクセス',
             address1: '〒151-0051',
-            address2: '東京都渋谷区千駄ヶ谷2-32-3',
-            phone: 'TEL: 03-XXXX-XXXX',
-            hours: '営業時間：12:00 - 21:00',
-            closed: '定休日：水曜日'
+            address2: '東京都渋谷区千駄ヶ谷2-32-3　外苑キリンビル1階',
+            phone: 'TEL: 070-4376-4298',
+            hours: '営業時間：11:00 - 18:00（金・土11:00-21:00）',
+            closed: '定休日：火曜日'
         },
         instagram: {
             title: 'Instagram'
@@ -74,10 +74,10 @@ const translations = {
         location: {
             title: 'Location',
             address1: '151-0051',
-            address2: '2-32-3 Sendagaya, Shibuya-ku, Tokyo',
-            phone: 'TEL: +81-3-XXXX-XXXX',
-            hours: 'Hours: 12:00 - 21:00',
-            closed: 'Closed: Wednesday'
+            address2: '1F Gaien Kirin Building, 2-32-3 Sendagaya, Shibuya-ku, Tokyo',
+            phone: 'TEL: +81-70-4376-4298',
+            hours: 'Hours: 11:00 - 18:00 (Fri & Sat 11:00-21:00)',
+            closed: 'Closed: Tuesday'
         },
         instagram: {
             title: 'Instagram'
@@ -119,10 +119,10 @@ const translations = {
         location: {
             title: '位置',
             address1: '邮编151-0051',
-            address2: '东京都涩谷区千驮谷2-32-3',
-            phone: '电话：+81-3-XXXX-XXXX',
-            hours: '营业时间：12:00 - 21:00',
-            closed: '休息日：周三'
+            address2: '东京都涩谷区千驮谷2-32-3 外苑麒麟大厦1楼',
+            phone: '电话：+81-70-4376-4298',
+            hours: '营业时间：11:00 - 18:00（周五・周六11:00-21:00）',
+            closed: '休息日：周二'
         },
         instagram: {
             title: 'Instagram'
