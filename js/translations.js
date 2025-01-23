@@ -5,9 +5,11 @@ const translations = {
             description: '循環型畜産農で育てられた菊池源吾牛を使用した極上のメンチカツをご提供します。'
         },
         nav: {
+            about: '菊池源吾牛について',
             menu: 'メニュー',
-            about: '私たちについて',
             location: 'アクセス',
+            instagram: 'インスタグラム',
+            reviews: 'お客様の声',
             reserve: '予約'
         },
         hero: {
@@ -78,9 +80,11 @@ const translations = {
             description: 'Experience the finest Japanese wagyu beef croquettes in an elegant setting.'
         },
         nav: {
+            about: 'About Kikuchi Gengo Beef',
             menu: 'Menu',
-            about: 'About',
             location: 'Location',
+            instagram: 'Instagram',
+            reviews: 'Reviews',
             reserve: 'Reserve'
         },
         hero: {
@@ -151,9 +155,11 @@ const translations = {
             description: '为您提供使用可持续养殖的菊池源吾和牛制作的顶级牛肉可乐饼。'
         },
         nav: {
+            about: '关于菊池源吾牛肉',
             menu: '菜单',
-            about: '关于我们',
             location: '位置',
+            instagram: 'Instagram',
+            reviews: '顾客评价',
             reserve: '预约'
         },
         hero: {
