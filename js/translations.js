@@ -16,8 +16,25 @@ const translations = {
             reserve: '食べログで予約'
         },
         about: {
-            title: '私たちについて',
-            description: '循環型畜産農で完全無添加にこだわり、人にも環境にも優しい黒毛和牛を生産している菊池ユートピアファームのオメガリッチ国産牛「菊池源吾牛」を使用したメニューを提供しています。'
+            title: '菊池源吾牛について',
+            description: '菊池源吾牛｜持続可能な未来を支える高品質牛肉',
+            quality: {
+                title: '■ 健康配慮の「オメガ3リッチ」肉質',
+                feed: 'アマニ種子配合飼料：脂質にオメガ3脂肪酸（α-リノレン酸）を含有。',
+                health: '人の健康に貢献：必須脂肪酸を摂取できるヘルシーな牛肉。',
+                welfare: '牛の健全育成：代謝疾患リスクを抑えた飼育法で、品質と動物福祉を両立。'
+            },
+            farming: {
+                title: '■ 循環型畜産農業による環境配慮',
+                intro: '菊池ユートピアファーム（熊本県）では、古来の循環型畜産農業を継承しています。',
+                resources: '資源の有効活用：収穫後の稲わらを飼料化、家畜の糞尿を堆肥として農地へ還元。',
+                environment: '環境保護：化学肥料・農薬不使用による土壌汚染防止、水質汚濁リスクの低減。',
+                sustainability: '持続可能性：廃棄物ゼロの仕組みで、生態系と調和した農業を実現。'
+            },
+            philosophy: {
+                title: '■ 生産者の想い',
+                message: '「生産者自らが安心して食べられるものだけを提供する」を信念に掲げます。'
+            }
         },
         menu: {
             title: 'メニュー',
@@ -61,8 +78,25 @@ const translations = {
             reserve: 'Reserve on Tabelog'
         },
         about: {
-            title: 'About Us',
-            description: 'We serve dishes using Kikuchi Gengo Beef, omega-rich Japanese Black cattle produced by Kikuchi Utopia Farm. Our beef is raised through sustainable farming practices with a commitment to being completely additive-free and friendly to both people and the environment.'
+            title: 'About Kikuchi Gengo Beef',
+            description: 'Kikuchi Gengo Beef | High-Quality Beef Supporting a Sustainable Future',
+            quality: {
+                title: '■ "Omega-3 Rich" Meat Quality for Health',
+                feed: 'Flaxseed-enriched feed: Contains Omega-3 fatty acids (α-linolenic acid) in fat.',
+                health: 'Human health benefits: Healthy beef providing essential fatty acids.',
+                welfare: 'Healthy cattle raising: Breeding method reducing metabolic disease risks, balancing quality and animal welfare.'
+            },
+            farming: {
+                title: '■ Environmental Care through Circular Livestock Farming',
+                intro: 'Kikuchi Utopia Farm (Kumamoto Prefecture) preserves traditional circular livestock farming.',
+                resources: 'Resource utilization: Converting post-harvest straw to feed, returning livestock waste as fertilizer.',
+                environment: 'Environmental protection: Preventing soil pollution and reducing water pollution risks without chemical fertilizers/pesticides.',
+                sustainability: 'Sustainability: Achieving ecosystem-harmonious agriculture with zero waste.'
+            },
+            philosophy: {
+                title: '■ Producer\'s Philosophy',
+                message: 'We uphold the belief of "only providing food that producers themselves can eat with confidence."'
+            }
         },
         menu: {
             title: 'Menu',
@@ -106,8 +140,25 @@ const translations = {
             reserve: '在食べログ预约'
         },
         about: {
-            title: '关于我们',
-            description: '我们使用来自菊池乌托邦农场的欧米茄富含量高的菊池源吾牛肉。该农场致力于循环畜牧业，坚持无添加剂，生产对人类和环境都友好的黑毛和牛。'
+            title: '关于菊池源吾牛',
+            description: '菊池源吾牛｜支持可持续未来的高品质牛肉',
+            quality: {
+                title: '■ 注重健康的"欧米伽3丰富"肉质',
+                feed: '亚麻籽配合饲料：脂质中含有欧米伽3脂肪酸（α-亚麻酸）。',
+                health: '促进人体健康：可摄取必需脂肪酸的健康牛肉。',
+                welfare: '牛只健康养殖：采用抑制代谢疾病风险的饲养方法，兼顾品质和动物福利。'
+            },
+            farming: {
+                title: '■ 通过循环型畜牧业关注环境',
+                intro: '菊池理想农场（熊本县）传承古老的循环型畜牧业。',
+                resources: '有效利用资源：将收获后的稻草制成饲料，将牲畜粪尿作为堆肥还田。',
+                environment: '环境保护：不使用化学肥料和农药，防止土壤污染，降低水质污染风险。',
+                sustainability: '可持续性：通过零废弃物机制，实现与生态系统和谐的农业。'
+            },
+            philosophy: {
+                title: '■ 生产者的理念',
+                message: '我们坚持"只提供生产者自己可以放心食用的产品"的信念。'
+            }
         },
         menu: {
             title: '菜单',
