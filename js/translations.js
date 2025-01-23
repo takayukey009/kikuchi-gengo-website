@@ -20,16 +20,22 @@ const translations = {
             description: '菊池源吾牛｜持続可能な未来を支える高品質牛肉',
             quality: {
                 title: '■ 健康配慮の「オメガ3リッチ」肉質',
-                feed: 'アマニ種子配合飼料：脂質にオメガ3脂肪酸（α-リノレン酸）を含有。',
-                health: '人の健康に貢献：必須脂肪酸を摂取できるヘルシーな牛肉。',
-                welfare: '牛の健全育成：代謝疾患リスクを抑えた飼育法で、品質と動物福祉を両立。'
+                feed_label: 'アマニ種子配合飼料',
+                feed: '脂質にオメガ3脂肪酸（α-リノレン酸）を含有。',
+                health_label: '人の健康に貢献',
+                health: '必須脂肪酸を摂取できるヘルシーな牛肉。',
+                welfare_label: '牛の健全育成',
+                welfare: '代謝疾患リスクを抑えた飼育法で、品質と動物福祉を両立。'
             },
             farming: {
                 title: '■ 循環型畜産農業による環境配慮',
                 intro: '菊池ユートピアファーム（熊本県）では、古来の循環型畜産農業を継承しています。',
-                resources: '資源の有効活用：収穫後の稲わらを飼料化、家畜の糞尿を堆肥として農地へ還元。',
-                environment: '環境保護：化学肥料・農薬不使用による土壌汚染防止、水質汚濁リスクの低減。',
-                sustainability: '持続可能性：廃棄物ゼロの仕組みで、生態系と調和した農業を実現。'
+                resources_label: '資源の有効活用',
+                resources: '収穫後の稲わらを飼料化、家畜の糞尿を堆肥として農地へ還元。',
+                environment_label: '環境保護',
+                environment: '化学肥料・農薬不使用による土壌汚染防止、水質汚濁リスクの低減。',
+                sustainability_label: '持続可能性',
+                sustainability: '廃棄物ゼロの仕組みで、生態系と調和した農業を実現。'
             },
             philosophy: {
                 title: '■ 生産者の想い',
@@ -79,23 +85,29 @@ const translations = {
         },
         about: {
             title: 'About Kikuchi Gengo Beef',
-            description: 'Kikuchi Gengo Beef | High-Quality Beef Supporting a Sustainable Future',
+            description: 'Kikuchi Gengo Beef | Premium Quality Beef Supporting a Sustainable Future',
             quality: {
                 title: '■ "Omega-3 Rich" Meat Quality for Health',
-                feed: 'Flaxseed-enriched feed: Contains Omega-3 fatty acids (α-linolenic acid) in fat.',
-                health: 'Human health benefits: Healthy beef providing essential fatty acids.',
-                welfare: 'Healthy cattle raising: Breeding method reducing metabolic disease risks, balancing quality and animal welfare.'
+                feed_label: 'Flaxseed-enriched Feed',
+                feed: 'Contains Omega-3 fatty acids (α-linolenic acid) in fat.',
+                health_label: 'Human Health Benefits',
+                health: 'Healthy beef providing essential fatty acids.',
+                welfare_label: 'Healthy Cattle Raising',
+                welfare: 'Breeding method reducing metabolic disease risks, balancing quality and animal welfare.'
             },
             farming: {
                 title: '■ Environmental Care through Circular Livestock Farming',
                 intro: 'Kikuchi Utopia Farm (Kumamoto Prefecture) preserves traditional circular livestock farming.',
-                resources: 'Resource utilization: Converting post-harvest straw to feed, returning livestock waste as fertilizer.',
-                environment: 'Environmental protection: Preventing soil pollution and reducing water pollution risks without chemical fertilizers/pesticides.',
-                sustainability: 'Sustainability: Achieving ecosystem-harmonious agriculture with zero waste.'
+                resources_label: 'Resource Utilization',
+                resources: 'Converting post-harvest straw to feed, returning livestock waste as fertilizer.',
+                environment_label: 'Environmental Protection',
+                environment: 'Preventing soil pollution and water contamination by avoiding chemical fertilizers and pesticides.',
+                sustainability_label: 'Sustainability',
+                sustainability: 'Achieving zero-waste, ecosystem-harmonious agriculture.'
             },
             philosophy: {
                 title: '■ Producer\'s Philosophy',
-                message: 'We uphold the belief of "only providing food that producers themselves can eat with confidence."'
+                message: 'Our commitment: "We only provide what we ourselves would confidently consume."'
             }
         },
         menu: {
@@ -143,21 +155,27 @@ const translations = {
             title: '关于菊池源吾牛',
             description: '菊池源吾牛｜支持可持续未来的高品质牛肉',
             quality: {
-                title: '■ 注重健康的"欧米伽3丰富"肉质',
-                feed: '亚麻籽配合饲料：脂质中含有欧米伽3脂肪酸（α-亚麻酸）。',
-                health: '促进人体健康：可摄取必需脂肪酸的健康牛肉。',
-                welfare: '牛只健康养殖：采用抑制代谢疾病风险的饲养方法，兼顾品质和动物福利。'
+                title: '■ 健康考量的"欧米伽3丰富"肉质',
+                feed_label: '亚麻籽配合饲料',
+                feed: '脂质中含有欧米伽3脂肪酸（α-亚麻酸）。',
+                health_label: '有益人体健康',
+                health: '提供必需脂肪酸的健康牛肉。',
+                welfare_label: '健康牛只培育',
+                welfare: '采用降低代谢疾病风险的饲养方法，平衡品质与动物福利。'
             },
             farming: {
-                title: '■ 通过循环型畜牧业关注环境',
-                intro: '菊池理想农场（熊本县）传承古老的循环型畜牧业。',
-                resources: '有效利用资源：将收获后的稻草制成饲料，将牲畜粪尿作为堆肥还田。',
-                environment: '环境保护：不使用化学肥料和农药，防止土壤污染，降低水质污染风险。',
-                sustainability: '可持续性：通过零废弃物机制，实现与生态系统和谐的农业。'
+                title: '■ 循环畜牧业的环保考量',
+                intro: '菊池理想牧场（熊本县）传承传统循环畜牧业。',
+                resources_label: '资源有效利用',
+                resources: '收获后的稻草制成饲料，畜禽粪便还田作为肥料。',
+                environment_label: '环境保护',
+                environment: '不使用化学肥料和农药，防止土壤污染和水质污染。',
+                sustainability_label: '可持续发展',
+                sustainability: '实现零废弃物，与生态系统和谐共存的农业。'
             },
             philosophy: {
-                title: '■ 生产者的理念',
-                message: '我们坚持"只提供生产者自己可以放心食用的产品"的信念。'
+                title: '■ 生产者理念',
+                message: '"只提供我们自己放心食用的产品"是我们的信念。'
             }
         },
         menu: {
