@@ -25,7 +25,6 @@
     <script src="js/translations.js" defer></script>
     <script src="js/language-switcher.js" defer></script>
     <script src="js/scroll.js" defer></script>
-    <script src="js/smooth-scroll.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -33,7 +32,7 @@
             <div class="container">
                 <a href="#top" class="logo-link">門</a>
                 <div class="nav-links">
-                    <a href="#news" class="nav-link" data-translate="nav.news">お知らせ</a>
+                    <span class="nav-link" data-translate="nav.news">お知らせ</span>
                     <a href="#about" class="nav-link" data-translate="nav.about">菊池源吾牛について</a>
                     <a href="#menu" class="nav-link" data-translate="nav.menu">メニュー</a>
                     <a href="#reservation" class="nav-link" data-translate="nav.reservation">ご予約</a>
@@ -62,14 +61,14 @@
             </div>
         </div>
 
-        <section id="news" class="section news">
+        <section id="news" class="section">
             <div class="container">
-                <h2 class="section-title" data-translate="nav.news">お知らせ</h2>
-                <div class="news-list">
+                <h2 class="section-title" data-translate="news.title">お知らせ</h2>
+                <div id="news-list">
                     <!-- ニュースアイテムは JavaScript で動的に追加されます -->
                 </div>
                 <div class="news-more">
-                    <a href="#" class="more-link" data-translate="news.more">
+                    <a href="news/list.html" class="more-link" data-translate="news.more">
                         一覧をみる
                         <i class="fas fa-chevron-right"></i>
                     </a>
@@ -255,6 +254,5 @@
     <script src="js/language-switcher.js" defer></script>
     <script src="js/news.js" defer></script>
     <script src="js/scroll.js" defer></script>
-    <script src="js/smooth-scroll.js" defer></script>
 </body>
 </html>

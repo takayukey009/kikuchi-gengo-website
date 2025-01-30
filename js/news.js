@@ -1,10 +1,12 @@
 async function loadNews() {
     try {
+        // ニュースリストの要素を取得
+        const newsList = document.getElementById('news-list');
+        if (!newsList) return;
+
         // 既知のニュースファイル名を直接指定
         const newsFiles = [
-            '2024-12-19-01.json',
-            '2025-01-30-01.json',
-            '2025-01-30-02.json'
+            '2025-01-30-01.json'  // 1周年記念のお知らせのみ残す
         ];
         
         // 各JSONファイルの内容を読み込む
@@ -12,7 +14,7 @@ async function loadNews() {
             newsFiles.map(async file => {
                 try {
                     // 相対パスを使用
-                    const response = await fetch(`./news/content/${file}`);
+                    const response = await fetch(`/news/data/${file}`);
                     if (!response.ok) {
                         console.error(`Failed to load ${file}:`, response.status);
                         return null;
@@ -32,21 +34,19 @@ async function loadNews() {
             .sort((a, b) => {
                 const dateA = new Date(a.date.replace(/\./g, '-'));
                 const dateB = new Date(b.date.replace(/\./g, '-'));
-                return dateB - dateA;
+                return dateB - dateA;  // 新しい順
             });
-
-        const newsList = document.querySelector('.news-list');
-        if (!newsList) {
-            console.error('News list element not found');
-            return;
-        }
-        newsList.innerHTML = ''; // Clear existing items
+        
+        // ニュースリストをクリア
+        newsList.innerHTML = '';
         
         // ニュースアイテムを表示
         sortedNews.forEach(newsItem => {
-            const newsElement = document.createElement('a');
-            newsElement.href = '#';
+            const newsElement = document.createElement('a');  // aタグを使用
             newsElement.className = 'news-item';
+            newsElement.style.textDecoration = 'none';  // 下線を消す
+            newsElement.style.color = 'inherit';  // 親要素の文字色を継承
+            newsElement.href = newsItem.content;  // 詳細ページへのリンク
             
             if (newsItem.important) {
                 newsElement.classList.add('important');
@@ -69,7 +69,7 @@ async function loadNews() {
             newsList.appendChild(newsElement);
         });
     } catch (error) {
-        console.error('Failed to load news:', error);
+        console.error('Error loading news:', error);
     }
 }
 
@@ -77,6 +77,4 @@ async function loadNews() {
 document.addEventListener('DOMContentLoaded', loadNews);
 
 // 言語切り替え時にニュースを再表示
-document.addEventListener('languageChanged', () => {
-    loadNews();
-});
+document.addEventListener('languageChanged', loadNews);
