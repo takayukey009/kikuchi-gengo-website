@@ -11,6 +11,7 @@ const translations = {
             location: 'アクセス',
             instagram: 'Instagram',
             reviews: 'お客様の声',
+            news: 'お知らせ',
             reserve: '予約'
         },
         hero: {
@@ -86,6 +87,9 @@ const translations = {
             dineInTitle: 'お席のご予約',
             tabelogButton: '食べログで予約'
         },
+        news: {
+            more: '一覧をみる'
+        },
         instagram: {
             title: 'Instagram'
         },
@@ -108,6 +112,7 @@ const translations = {
             location: 'Location',
             instagram: 'Instagram',
             reviews: 'Reviews',
+            news: 'News',
             reserve: 'Reserve'
         },
         hero: {
@@ -179,9 +184,12 @@ const translations = {
         },
         reservation: {
             title: 'Reservations',
-            takeoutTitle: 'Takeout & Bento Orders',
+            takeoutTitle: 'Takeout Orders',
             dineInTitle: 'Table Reservations',
             tabelogButton: 'Reserve on Tabelog'
+        },
+        news: {
+            more: 'View All'
         },
         instagram: {
             title: 'Instagram'
@@ -205,6 +213,7 @@ const translations = {
             location: '位置',
             instagram: 'Instagram',
             reviews: '顾客评价',
+            news: '新闻',
             reserve: '预约'
         },
         hero: {
@@ -279,6 +288,9 @@ const translations = {
             takeoutTitle: '外带・便当预约',
             dineInTitle: '餐位预约',
             tabelogButton: '在食べログ预约'
+        },
+        news: {
+            more: '查看更多'
         },
         instagram: {
             title: 'Instagram'

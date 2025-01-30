@@ -775,6 +775,83 @@ html[lang="en"] .title-line {
     }
 }
 
+/* News Section */
+.news-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.news-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.news-item {
+    display: flex;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    background: #f9f9f9;
+    padding-left: 1rem;
+}
+
+.news-date {
+    width: 120px;
+    color: #666;
+    flex-shrink: 0;
+}
+
+.news-title {
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.news-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.news-more a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.news-more a:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.news-more i {
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .news-date {
+        margin-bottom: 0.5rem;
+    }
+
+    .news-title {
+        font-size: 1rem;
+    }
+}
+
 /* 予約セクション */
 .reservation-section {
     padding: 4rem 0;
