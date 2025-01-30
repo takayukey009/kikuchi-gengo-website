@@ -31,15 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // スクロールインジケーターのクリックイベント
     if (scrollIndicator) {
         scrollIndicator.addEventListener('click', function() {
-            const aboutSection = document.querySelector('#about');
-            if (aboutSection) {
-                const headerHeight = header.offsetHeight;
-                const targetPosition = aboutSection.getBoundingClientRect().top + window.pageYOffset;
-                window.scrollTo({
-                    top: targetPosition - headerHeight,
-                    behavior: 'smooth'
-                });
-            }
+            const documentHeight = Math.max(
+                document.body.scrollHeight,
+                document.body.offsetHeight,
+                document.documentElement.clientHeight,
+                document.documentElement.scrollHeight,
+                document.documentElement.offsetHeight
+            );
+            
+            window.scrollTo({
+                top: documentHeight,
+                behavior: 'smooth'
+            });
         });
     }
 
