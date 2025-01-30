@@ -7,8 +7,9 @@ const translations = {
         nav: {
             about: '菊池源吾牛について',
             menu: 'メニュー',
+            reservation: 'ご予約',
             location: 'アクセス',
-            instagram: 'インスタグラム',
+            instagram: 'Instagram',
             reviews: 'お客様の声',
             reserve: '予約'
         },
@@ -79,6 +80,12 @@ const translations = {
             hours: '営業時間：11:00 - 18:00（金・土11:00-21:00）',
             closed: '定休日：火曜日'
         },
+        reservation: {
+            title: 'ご予約',
+            takeoutTitle: 'テイクアウト・お弁当予約',
+            dineInTitle: 'お席のご予約',
+            tabelogButton: '食べログで予約'
+        },
         instagram: {
             title: 'Instagram'
         },
@@ -97,6 +104,7 @@ const translations = {
         nav: {
             about: 'About Kikuchi Gengo Beef',
             menu: 'Menu',
+            reservation: 'Reservations',
             location: 'Location',
             instagram: 'Instagram',
             reviews: 'Reviews',
@@ -169,6 +177,12 @@ const translations = {
             hours: 'Hours: 11:00 - 18:00 (Fri & Sat 11:00-21:00)',
             closed: 'Closed: Tuesdays'
         },
+        reservation: {
+            title: 'Reservations',
+            takeoutTitle: 'Takeout & Bento Orders',
+            dineInTitle: 'Table Reservations',
+            tabelogButton: 'Reserve on Tabelog'
+        },
         instagram: {
             title: 'Instagram'
         },
@@ -185,8 +199,9 @@ const translations = {
             description: '为您提供使用可持续养殖的菊池源吾和牛制作的顶级牛肉可乐饼。'
         },
         nav: {
-            about: '关于菊池源吾牛肉',
+            about: '关于菊池源吾和牛',
             menu: '菜单',
+            reservation: '预约',
             location: '位置',
             instagram: 'Instagram',
             reviews: '顾客评价',
@@ -198,7 +213,7 @@ const translations = {
             reserve: '在食べログ预约'
         },
         about: {
-            title: '关于菊池源吾牛',
+            title: '关于菊池源吾和牛',
             description: '菊池源吾牛｜支持可持续未来的高品质牛肉',
             quality: {
                 title: '■ 健康考量的"欧米伽3丰富"肉质',
@@ -258,6 +273,12 @@ const translations = {
             phone: '电话: 070-4376-4298',
             hours: '营业时间：11:00 - 18:00（周五・周六11:00-21:00）',
             closed: '休息日：周二'
+        },
+        reservation: {
+            title: '预约',
+            takeoutTitle: '外带・便当预约',
+            dineInTitle: '餐位预约',
+            tabelogButton: '在食べログ预约'
         },
         instagram: {
             title: 'Instagram'
