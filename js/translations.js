@@ -91,7 +91,7 @@ const translations = {
     },
     en: {
         meta: {
-            title: 'mon - Kikuchi Gengo\nBeef Croquette Specialist',
+            title: 'mon -\nKikuchi Gengo Beef Croquette Specialist',
             description: 'Experience the finest Japanese wagyu beef croquettes in an elegant setting.'
         },
         nav: {
@@ -103,7 +103,7 @@ const translations = {
             reserve: 'Reserve'
         },
         hero: {
-            title: 'Kikuchi Gengo\nBeef Croquette',
+            title: 'Kikuchi Gengo Beef Croquette',
             shopName: 'mon',
             reserve: 'Reserve on Tabelog'
         },

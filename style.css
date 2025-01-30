@@ -303,6 +303,15 @@ body {
     }
 
     /* 英語版のタイトル用のスペシャルスタイル */
+    html[lang="en"] .title-line:first-child {
+        display: inline-block;
+        font-size: 1.6rem;
+        max-width: 280px;
+        margin: 0 auto;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
     html[lang="en"] .title-line {
         white-space: pre-line;  /* 改行を保持 */
         font-size: 1.6rem;
@@ -318,6 +327,21 @@ body {
 
     .hero .title-line:last-child {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html[lang="en"] .title-line:first-child {
+        font-size: 1.4rem;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    html[lang="en"] .title-line:first-child::after {
+        content: "\A Beef Croquette";
+        white-space: pre;
+        display: block;
+        margin-top: 0.2rem;
     }
 }
 
