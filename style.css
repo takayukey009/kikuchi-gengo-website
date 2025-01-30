@@ -264,65 +264,68 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: var(--secondary-color);
-    padding: 0 1rem;
-}
-
-.hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: #fff;
     padding: 2rem;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .title-line {
     display: block;
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 英語版のタイトル用のスタイル */
+html[lang="en"] .title-line {
+    font-size: 2rem;
+    max-width: 280px;
+    margin: 0 auto 0.5rem;
+    word-break: break-word;
+    hyphens: auto;
+    white-space: pre-line;
 }
 
 .shop-name {
     font-size: 3.5rem;
-    font-weight: 600;
-    color: #d4af37;  /* 金色 */
-    margin: 1rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 700;
 }
 
-.hero .title-line:last-child {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-/* モバイル用のスタイル調整 */
 @media (max-width: 768px) {
     .title-line {
         font-size: 2rem;
     }
 
-    /* 英語版のタイトル用のスペシャルスタイル */
     html[lang="en"] .title-line {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        display: block;
+        margin-bottom: 0.5rem;
         max-width: 280px;
         margin: 0 auto 0.5rem;
         word-break: break-word;
         hyphens: auto;
-        white-space: pre-line;
     }
 
     .shop-name {
@@ -331,21 +334,6 @@ body {
 
     .hero .title-line:last-child {
         font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    html[lang="en"] .title-line {
-        font-size: 1.4rem;
-        display: block;
-        margin-bottom: 0.5rem;
-    }
-
-    html[lang="en"] .title-line::after {
-        content: "\A Beef Croquette";
-        white-space: pre;
-        display: block;
-        margin-top: 0.2rem;
     }
 }
 
