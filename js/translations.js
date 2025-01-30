@@ -103,7 +103,7 @@ const translations = {
             reserve: 'Reserve'
         },
         hero: {
-            title: 'Kikuchi Gengo Beef Croquette',
+            title: 'Kikuchi Gengo\nBeef Croquette',
             shopName: 'mon',
             reserve: 'Reserve on Tabelog'
         },

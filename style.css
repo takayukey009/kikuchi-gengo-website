@@ -847,4 +847,24 @@ body {
         transform: none;
         flex-direction: row;
     }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    html[lang="en"] .hero-content h1 {
+        font-size: 1.6rem;
+        display: inline-block;
+        max-width: 280px;
+    }
+
+    .menu-content h3 {
+        font-size: 1.1rem;
+        line-height: 1.4;
+        word-break: break-word;
+        hyphens: auto;
+    }
 }
