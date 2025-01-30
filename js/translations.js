@@ -1,5 +1,6 @@
 const translations = {
     ja: {
+        title: 'mon - 菊池源吾牛メンチカツ専門店',
         meta: {
             title: 'mon - 菊池源吾牛メンチカツ専門店',
             description: '循環型畜産農で育てられた菊池源吾牛を使用した極上のメンチカツをご提供します。'
@@ -97,10 +98,11 @@ const translations = {
             title: 'お客様の声'
         },
         footer: {
-            // Add footer translations here
+            copyright: '© 2025 門 - 菊池源吾牛メンチカツ専門店'
         }
     },
     en: {
+        title: 'mon - Kikuchi Gengo Beef Croquette Specialist',
         meta: {
             title: 'mon -\nKikuchi Gengo Beef Croquette Specialist',
             description: 'Experience the finest Japanese wagyu beef croquettes in an elegant setting.'
@@ -198,10 +200,11 @@ const translations = {
             title: 'Customer Reviews'
         },
         footer: {
-            // Add footer translations here
+            copyright: '© 2025 mon - Kikuchi Gengo Beef Croquette Specialist'
         }
     },
     'zh-CN': {
+        title: 'mon - 菊池源吾牛肉可乐饼专门店',
         meta: {
             title: 'mon - 菊池源吾牛肉可乐饼专门店',
             description: '为您提供使用可持续养殖的菊池源吾和牛制作的顶级牛肉可乐饼。'
@@ -299,7 +302,7 @@ const translations = {
             title: '顾客评价'
         },
         footer: {
-            // Add footer translations here
+            copyright: '© 2025 門 - 菊池源吾牛肉可乐饼专门店'
         }
     }
 };
