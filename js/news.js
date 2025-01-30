@@ -1,50 +1,37 @@
 async function loadNews() {
     try {
-        // news/contentディレクトリ内の全てのJSONファイルを取得
-        const newsFiles = await fetch('/news/content/');
-        const newsItems = await Promise.all(
-            (await newsFiles.json()).map(async file => {
-                if (file.endsWith('.json')) {
-                    const response = await fetch(`/news/content/${file}`);
-                    return await response.json();
-                }
-            })
-        );
-
-        // 日付でソート
-        const sortedNews = newsItems
-            .filter(item => item) // nullを除外
-            .sort((a, b) => new Date(b.date) - new Date(a.date));
-
+        // news/contentディレクトリ内のJSONファイルを直接指定して読み込む
+        const response = await fetch('/news/content/2025-01-30-01.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const newsItem = await response.json();
+        
         const newsList = document.querySelector('.news-list');
         newsList.innerHTML = ''; // Clear existing items
         
-        // 最新の3件のみ表示
-        const recentNews = sortedNews.slice(0, 3);
+        // ニュースアイテムを表示
+        const newsElement = document.createElement('a');
+        newsElement.href = '#';
+        newsElement.className = 'news-item';
         
-        recentNews.forEach(news => {
-            const newsItem = document.createElement('a');
-            newsItem.href = '#'; // リンク先は必要に応じて設定
-            newsItem.className = 'news-item';
-            
-            if (news.important) {
-                newsItem.classList.add('important');
-            }
-            
-            const date = document.createElement('div');
-            date.className = 'news-date';
-            date.textContent = news.date;
-            
-            const title = document.createElement('div');
-            title.className = 'news-title';
-            title.textContent = document.documentElement.lang === 'en' ? news.title_en :
-                              document.documentElement.lang === 'zh' ? news.title_zh :
-                              news.title;
-            
-            newsItem.appendChild(date);
-            newsItem.appendChild(title);
-            newsList.appendChild(newsItem);
-        });
+        if (newsItem.important) {
+            newsElement.classList.add('important');
+        }
+        
+        const date = document.createElement('div');
+        date.className = 'news-date';
+        date.textContent = newsItem.date;
+        
+        const title = document.createElement('div');
+        title.className = 'news-title';
+        title.textContent = document.documentElement.lang === 'en' ? newsItem.title_en :
+                          document.documentElement.lang === 'zh' ? newsItem.title_zh :
+                          newsItem.title;
+        
+        newsElement.appendChild(date);
+        newsElement.appendChild(title);
+        newsList.appendChild(newsElement);
     } catch (error) {
         console.error('Failed to load news:', error);
     }
