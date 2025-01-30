@@ -54,6 +54,17 @@ body {
     padding: 0 1rem;
 }
 
+.logo-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo-link:hover {
+    color: #fff;
+}
+
 .logo {
     font-size: 2rem;
     font-weight: 700;
@@ -848,24 +859,8 @@ body {
 }
 
 @media (max-width: 768px) {
-    .reservation-options {
-        gap: 2rem;
-        padding: 0 1rem;
-    }
-
-    .reservation-option {
-        flex: 1 1 100%;
-        min-width: auto;
-        margin: 0;
-    }
-
-    .phone-number {
-        font-size: 1.3rem;
-    }
-
-    .tabelog-button {
-        padding: 0.8rem 1.5rem;
-        font-size: 1.1rem;
+    .reservation-section {
+        padding: 3rem 0;
     }
 
     .reservation-section h2 {
@@ -873,9 +868,32 @@ body {
         margin-bottom: 2rem;
     }
 
+    .reservation-options {
+        gap: 1.5rem;
+        padding: 0 1rem;
+        flex-direction: column;
+    }
+
+    .reservation-option {
+        width: 100%;
+        min-width: 0;
+        padding: 1.5rem;
+    }
+
     .reservation-option h3 {
         font-size: 1.3rem;
         margin-bottom: 1.2rem;
+    }
+
+    .phone-number {
+        font-size: 1.3rem;
+    }
+
+    .tabelog-button {
+        width: 100%;
+        justify-content: center;
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
     }
 }
 
