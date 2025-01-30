@@ -1,5 +1,7 @@
-// 現在の言語を保存
-let currentLang = localStorage.getItem('language') || 'ja';
+// 現在の言語を保存（既存の変数があれば使用）
+if (typeof currentLang === 'undefined') {
+    var currentLang = localStorage.getItem('language') || 'ja';
+}
 
 // ネストされたオブジェクトから値を取得する関数
 function getNestedTranslation(obj, path) {

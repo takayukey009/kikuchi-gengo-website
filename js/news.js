@@ -4,7 +4,9 @@ async function loadNews() {
         const newsFiles = [
             'テスト.json',
             'テスト-1.json',
-            '1周年記念キャンペーンのお知らせ.json'
+            '1周年記念キャンペーンのお知らせ.json',
+            '1周年記念キャンペーンのお知らせ-1.json',
+            '2024-12-19-01.json'
         ];
         
         // 各JSONファイルの内容を読み込む
