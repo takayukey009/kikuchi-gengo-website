@@ -192,6 +192,7 @@ if (typeof translations === 'undefined') {
                 tabelogButton: 'Reserve on Tabelog'
             },
             news: {
+                title: 'News',
                 more: 'View All'
             },
             instagram: {
@@ -222,7 +223,7 @@ if (typeof translations === 'undefined') {
             },
             hero: {
                 title: '菊池源吾牛肉饼',
-                shopName: '「門」',
+                shopName: '「门」',
                 reserve: '在食べログ预约'
             },
             about: {
@@ -264,7 +265,7 @@ if (typeof translations === 'undefined') {
                     price: '¥1,500'
                 },
                 sandwich: {
-                    title: '「門」三明治',
+                    title: '「门」三明治',
                     description: '菊池源吾牛肉饼三明治。',
                     price: '¥1,500'
                 },
@@ -274,7 +275,7 @@ if (typeof translations === 'undefined') {
                     price: '¥1,200～¥2,000'
                 },
                 hayashi: {
-                    title: '「門」哈亚西饭',
+                    title: '「门」哈亚西饭',
                     description: '使用菊池源吾牛肉制作的特制哈亚西饭。',
                     price: '¥1,800'
                 }
@@ -294,6 +295,7 @@ if (typeof translations === 'undefined') {
                 tabelogButton: '在食べログ预约'
             },
             news: {
+                title: '新闻',
                 more: '查看更多'
             },
             instagram: {
