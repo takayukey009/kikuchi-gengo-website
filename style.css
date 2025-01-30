@@ -290,12 +290,27 @@ body {
 .hero h1 {
     position: relative;
     z-index: 1;
+    font-family: 'Noto Serif JP', serif;
 }
 
 .title-line {
     display: block;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.shop-name {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #d4af37;  /* 金色 */
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero .title-line:last-child {
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 /* 英語版のタイトル用のスタイル */
@@ -308,14 +323,9 @@ html[lang="en"] .title-line {
     white-space: pre-line;
 }
 
-.shop-name {
-    font-size: 3.5rem;
-    font-weight: 700;
-}
-
 @media (max-width: 768px) {
     .title-line {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     html[lang="en"] .title-line {
