@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('nav');
     const header = document.querySelector('.header');
+    const scrollIndicator = document.querySelector('.scroll-indicator');
     let lastScrollTop = 0;
     const scrollThreshold = 50;
 
@@ -26,6 +27,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     handleScroll(); // Initial check
+
+    // スクロールインジケーターのクリックイベント
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', function() {
+            const aboutSection = document.querySelector('#about');
+            if (aboutSection) {
+                const headerHeight = header.offsetHeight;
+                const targetPosition = aboutSection.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: targetPosition - headerHeight,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
 
     // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
