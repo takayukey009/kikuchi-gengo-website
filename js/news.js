@@ -11,7 +11,8 @@ async function loadNews() {
         const newsItems = await Promise.all(
             newsFiles.map(async file => {
                 try {
-                    const response = await fetch(`/news/content/${file}`);
+                    // 相対パスを使用
+                    const response = await fetch(`./news/content/${file}`);
                     if (!response.ok) {
                         console.error(`Failed to load ${file}:`, response.status);
                         return null;
@@ -35,6 +36,10 @@ async function loadNews() {
             });
 
         const newsList = document.querySelector('.news-list');
+        if (!newsList) {
+            console.error('News list element not found');
+            return;
+        }
         newsList.innerHTML = ''; // Clear existing items
         
         // ニュースアイテムを表示
@@ -53,8 +58,10 @@ async function loadNews() {
             
             const title = document.createElement('div');
             title.className = 'news-title';
-            title.textContent = document.documentElement.lang === 'en' ? newsItem.title_en :
-                              document.documentElement.lang === 'zh' ? newsItem.title_zh :
+            // 言語に応じてタイトルを選択
+            const currentLang = document.documentElement.lang;
+            title.textContent = currentLang === 'en' ? newsItem.title_en :
+                              currentLang === 'zh' ? newsItem.title_zh :
                               newsItem.title;
             
             newsElement.appendChild(date);
