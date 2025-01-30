@@ -364,6 +364,29 @@ html[lang="en"] .title-line {
     }
 }
 
+@media (max-width: 768px) {
+    /* 日本語版のみに適用 */
+    html[lang="ja"] .hero .title-line[data-translate="hero.title"] {
+        font-size: 2.3rem;
+    }
+    
+    .title-line {
+        font-size: 2.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+    
+    .shop-name {
+        font-size: 3rem;
+    }
+
+    .hero .title-line:last-child {
+        font-size: 1.8rem;
+    }
+}
+
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
