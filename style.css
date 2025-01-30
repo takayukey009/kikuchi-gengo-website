@@ -266,7 +266,9 @@ body {
     padding: 0 1rem;
 }
 
-.hero-content {
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 2rem;
     text-align: center;
     color: #fff;
     padding: 2rem;
@@ -274,34 +276,46 @@ body {
     z-index: 2;
 }
 
-.hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    line-height: 1.4;
+.title-line {
+    display: block;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
 }
 
-.hero-content p {
-    font-size: 2rem;
-    color: #d4af37;  /* 金色 */
-    margin: 0;
+.shop-name {
+    font-size: 3.5rem;
     font-weight: 600;
+    color: #d4af37;  /* 金色 */
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero .title-line:last-child {
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 /* モバイル用のスタイル調整 */
 @media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 1.8rem;
+    .title-line {
+        font-size: 2rem;
     }
 
     /* 英語版のタイトル用のスペシャルスタイル */
-    html[lang="en"] .hero-content h1 {
+    html[lang="en"] .title-line {
         font-size: 1.6rem;
         max-width: 280px;
-        margin: 0 auto 1rem;
+        margin: 0 auto 0.5rem;
+        word-break: break-word;
+        hyphens: auto;
     }
 
-    .hero-content p {
+    .shop-name {
+        font-size: 2.5rem;
+    }
+
+    .hero .title-line:last-child {
         font-size: 1.5rem;
     }
 }
@@ -845,14 +859,14 @@ body {
         flex-direction: row;
     }
     
-    .hero-content h1 {
+    .hero h1 {
         font-size: 1.8rem;
         line-height: 1.4;
         word-break: break-word;
         hyphens: auto;
     }
 
-    html[lang="en"] .hero-content h1 {
+    html[lang="en"] .hero h1 {
         font-size: 1.6rem;
         display: inline-block;
         max-width: 280px;
