@@ -1,15 +1,15 @@
 async function loadNews() {
     try {
-        // ニュース一覧を取得
-        const newsListResponse = await fetch('/news/content/');
-        const newsFiles = await newsListResponse.json();
-        
-        // JSONファイルのみを抽出
-        const jsonFiles = newsFiles.filter(file => file.endsWith('.json'));
+        // 既知のニュースファイル名を直接指定
+        const newsFiles = [
+            'テスト.json',
+            'テスト-1.json',
+            '1周年記念キャンペーンのお知らせ.json'
+        ];
         
         // 各JSONファイルの内容を読み込む
         const newsItems = await Promise.all(
-            jsonFiles.map(async file => {
+            newsFiles.map(async file => {
                 try {
                     const response = await fetch(`/news/content/${file}`);
                     if (!response.ok) {
