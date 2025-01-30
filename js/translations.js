@@ -91,7 +91,7 @@ const translations = {
     },
     en: {
         meta: {
-            title: 'mon - Kikuchi Gengo Beef Croquette Specialist',
+            title: 'mon - Kikuchi Gengo\nBeef Croquette Specialist',
             description: 'Experience the finest Japanese wagyu beef croquettes in an elegant setting.'
         },
         nav: {

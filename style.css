@@ -304,6 +304,7 @@ body {
 
     /* 英語版のタイトル用のスペシャルスタイル */
     html[lang="en"] .title-line {
+        white-space: pre-line;  /* 改行を保持 */
         font-size: 1.6rem;
         max-width: 280px;
         margin: 0 auto 0.5rem;
