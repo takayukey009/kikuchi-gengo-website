@@ -1,6 +1,17 @@
+# Allow all crawlers
 User-agent: *
 Allow: /
-Sitemap: https://[あなたのドメイン]/sitemap.xml
+
+# Explicitly allow Facebook crawler
+User-agent: facebookexternalhit
+Allow: /
+
+# Allow Facebook Instant Articles crawler
+User-agent: facebookexternalhit/1.1
+Allow: /
+
+# Sitemap location
+Sitemap: https://monsendagaya.com/sitemap.xml
 
 # Disallow admin area
 Disallow: /admin/
