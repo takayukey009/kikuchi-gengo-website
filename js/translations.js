@@ -193,7 +193,7 @@ const translations = {
             reserve: '预约'
         },
         hero: {
-            title: '菊池源吾牛肉可乐饼',
+            title: '菊池源吾牛肉饼',
             shopName: '「門」',
             reserve: '在食べログ预约'
         },
