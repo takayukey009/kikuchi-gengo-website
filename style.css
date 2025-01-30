@@ -859,10 +859,32 @@ body {
 @media (max-width: 768px) {
     .reservation-options {
         gap: 2rem;
+        padding: 0 1rem;
     }
 
     .reservation-option {
         flex: 1 1 100%;
+        min-width: auto;
+        margin: 0;
+    }
+
+    .phone-number {
+        font-size: 1.3rem;
+    }
+
+    .tabelog-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .reservation-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .reservation-option h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
     }
 }
 
