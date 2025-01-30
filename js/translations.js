@@ -48,12 +48,12 @@ const translations = {
             menchikatsu: {
                 title: '菊池源吾牛メンチカツ',
                 description: '菊池源吾牛を100%使用した門の看板メニュー。',
-                price: '¥3,800'
+                price: '¥600'
             },
             tacorice: {
                 title: '菊池源吾牛タコライス',
                 description: '菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。',
-                price: '¥1,200'
+                price: '¥1,500'
             }
         },
         location: {
@@ -123,12 +123,12 @@ const translations = {
             menchikatsu: {
                 title: 'Kikuchi Gengo Beef Menchi Katsu',
                 description: 'Our signature dish made with 100% Kikuchi Gengo beef.',
-                price: '¥3,800'
+                price: '¥600'
             },
             tacorice: {
                 title: 'Kikuchi Gengo Beef Taco Rice',
                 description: 'A fusion dish featuring Kikuchi Gengo ground beef and fresh vegetables.',
-                price: '¥1,200'
+                price: '¥1,500'
             }
         },
         location: {
@@ -198,12 +198,12 @@ const translations = {
             menchikatsu: {
                 title: '菊池源吾牛肉饼',
                 description: '使用100%菊池源吾牛肉制作的本店招牌菜品。',
-                price: '¥3,800'
+                price: '¥600'
             },
             tacorice: {
                 title: '菊池源吾牛肉塔可饭',
                 description: '使用菊池源吾牛肉末和新鲜蔬菜制作的和牛塔可饭。',
-                price: '¥1,200'
+                price: '¥1,500'
             }
         },
         location: {
