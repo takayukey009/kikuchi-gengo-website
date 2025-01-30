@@ -54,6 +54,21 @@ const translations = {
                 title: '菊池源吾牛タコライス',
                 description: '菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。',
                 price: '¥1,500'
+            },
+            sandwich: {
+                title: '「門」サンド',
+                description: '菊池源吾牛を100%使用したメンチカツサンド。',
+                price: '¥1,500'
+            },
+            set: {
+                title: '門のごはんセット',
+                description: '菊池源吾牛メンチカツ定食。※3種類ございます。写真はAセット。',
+                price: '¥1,200～¥2,000'
+            },
+            hayashi: {
+                title: '「門」ハヤシライス',
+                description: '菊池源吾牛を使用した特製ハヤシライス',
+                price: '¥1,800'
             }
         },
         location: {
@@ -129,6 +144,21 @@ const translations = {
                 title: 'Kikuchi Gengo Beef Taco Rice',
                 description: 'A fusion dish featuring Kikuchi Gengo ground beef and fresh vegetables.',
                 price: '¥1,500'
+            },
+            sandwich: {
+                title: 'mon Sandwich',
+                description: 'Kikuchi Gengo beef menchi katsu sandwich.',
+                price: '¥1,500'
+            },
+            set: {
+                title: 'mon\'s Rice Set',
+                description: 'Kikuchi Gengo beef menchi katsu set meal. ※3 types available. Photo is A set.',
+                price: '¥1,200～¥2,000'
+            },
+            hayashi: {
+                title: 'mon\'s Hayashi Rice',
+                description: 'Special hayashi rice using Kikuchi Gengo beef.',
+                price: '¥1,800'
             }
         },
         location: {
@@ -204,6 +234,21 @@ const translations = {
                 title: '菊池源吾牛肉塔可饭',
                 description: '使用菊池源吾牛肉末和新鲜蔬菜制作的和牛塔可饭。',
                 price: '¥1,500'
+            },
+            sandwich: {
+                title: '「門」三明治',
+                description: '菊池源吾牛肉饼三明治。',
+                price: '¥1,500'
+            },
+            set: {
+                title: '门的饭菜套餐',
+                description: '菊池源吾牛肉饼套餐。※3种类型可供选择。照片是A套餐。',
+                price: '¥1,200～¥2,000'
+            },
+            hayashi: {
+                title: '「門」哈亚西饭',
+                description: '使用菊池源吾牛肉制作的特制哈亚西饭。',
+                price: '¥1,800'
             }
         },
         location: {
