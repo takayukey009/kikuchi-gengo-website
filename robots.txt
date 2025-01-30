@@ -1,13 +1,10 @@
-# Allow all crawlers
-User-agent: *
-Allow: /
-
-# Explicitly allow Facebook crawler
+# Facebook Crawlers
 User-agent: facebookexternalhit
+User-agent: facebookexternalhit/1.1
 Allow: /
 
-# Allow Facebook Instant Articles crawler
-User-agent: facebookexternalhit/1.1
+# All other crawlers
+User-agent: *
 Allow: /
 
 # Sitemap location
