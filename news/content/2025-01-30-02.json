@@ -1,12 +1,12 @@
 {
-  "id": "2025-01-30-02",
+  "important": true,
+  "body": "平素より格別のご愛顧を賜り、誠にありがとうございます。\n\n門は、おかげさまで2025年4月に開店1周年を迎えることとなりました。\n日頃の感謝の気持ちを込めて、以下の期間で記念キャンペーンを実施いたします。\n\n【期間】\n2025年月日（）～月日（）\n\n【内容】\n・メンチカツ1個プレゼント（お食事をされたお客様）\n・全メニュー10%オフ\n\nこの機会に是非ご来店ください。\nスタッフ一同、心よりお待ちしております。",
+  "body_en": "Thank you for your continued patronage.\n\nWe are pleased to announce that mon will celebrate its 1st anniversary in February 2025.\nTo express our gratitude, we will be holding a special campaign during the following period:\n\nPeriod:\nFebruary 1 (Sat) - February 29 (Thu), 2025\n\nCampaign Details:\n・Free Menchi Katsu (for dining customers)\n・10% off all menu items\n\nWe look forward to serving you during this special occasion.\nThank you for your continued support.",
+  "body_zh": "感谢您一直以来的厚爱。\n\n在您的支持下，门即将迎来开业一周年。\n为了表达我们的感谢之情，我们将在以下期间举办纪念活动。\n\n活动期间：\n2025年2月1日（周六）～2月29日（周四）\n\n活动内容：\n・赠送一个牛肉饼（堂食顾客）\n・所有菜品九折优惠\n\n诚挚邀请您在此期间光临本店。\n全体员工期待您的到来。",
   "date": "2025.01.30",
-  "title": "1周年記念キャンペーンのお知らせ",
   "title_en": "1st Anniversary Campaign",
   "title_zh": "一周年纪念活动通知",
-  "category": "キャンペーン",
-  "important": true,
-  "body": "平素より格別のご愛顧を賜り、誠にありがとうございます。\n\n門は、おかげさまで2025年2月に開店1周年を迎えることとなりました。\n日頃の感謝の気持ちを込めて、以下の期間で記念キャンペーンを実施いたします。\n\n【期間】\n2025年2月1日（土）～2月29日（木）\n\n【内容】\n・メンチカツ1個プレゼント（お食事をされたお客様）\n・全メニュー10%オフ\n\nこの機会に是非ご来店ください。\nスタッフ一同、心よりお待ちしております。",
-  "body_en": "Thank you for your continued patronage.\n\nWe are pleased to announce that mon will celebrate its 1st anniversary in February 2025.\nTo express our gratitude, we will be holding a special campaign during the following period:\n\nPeriod:\nFebruary 1 (Sat) - February 29 (Thu), 2025\n\nCampaign Details:\n・Free Menchi Katsu (for dining customers)\n・10% off all menu items\n\nWe look forward to serving you during this special occasion.\nThank you for your continued support.",
-  "body_zh": "感谢您一直以来的厚爱。\n\n在您的支持下，门即将迎来开业一周年。\n为了表达我们的感谢之情，我们将在以下期间举办纪念活动。\n\n活动期间：\n2025年2月1日（周六）～2月29日（周四）\n\n活动内容：\n・赠送一个牛肉饼（堂食顾客）\n・所有菜品九折优惠\n\n诚挚邀请您在此期间光临本店。\n全体员工期待您的到来。"
+  "title": "1周年記念キャンペーンのお知らせ",
+  "id": "2025-01-30-02",
+  "category": "キャンペーン"
 }
