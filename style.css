@@ -266,47 +266,44 @@ body {
     padding: 0 1rem;
 }
 
-.hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    margin-bottom: 2rem;
+.hero-content {
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
 }
 
-.title-line {
-    display: block;
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 0.5rem;
-}
-
-.shop-name {
-    font-size: 3.5rem;
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     font-weight: 600;
-    margin: 1rem 0;
-    color: #d4af37;  /* 金色 */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.4;
 }
 
-.hero .title-line:last-child {
+.hero-content p {
     font-size: 2rem;
-    margin-top: 1rem;
+    color: #d4af37;  /* 金色 */
+    margin: 0;
+    font-weight: 600;
 }
 
-.reservation-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 2rem;
-    background-color: transparent;
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 2rem;
-}
+/* モバイル用のスタイル調整 */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
 
-.reservation-btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    /* 英語版のタイトル用のスペシャルスタイル */
+    html[lang="en"] .hero-content h1 {
+        font-size: 1.6rem;
+        max-width: 280px;
+        margin: 0 auto 1rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
 }
 
 .scroll-indicator {
