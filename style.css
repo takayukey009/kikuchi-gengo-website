@@ -54,27 +54,25 @@ body {
     padding: 0 1rem;
 }
 
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: auto;
+}
+
 .logo-link {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
 }
 
 .logo-link:hover {
     color: #fff;
 }
 
-.logo {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Noto Serif JP', serif;
-    transition: color 0.3s ease;
-}
-
-.header.scrolled .logo {
+.header.scrolled .logo-link {
     color: var(--primary-color);
 }
 
@@ -209,6 +207,10 @@ body {
     .logo {
         font-size: 1.5rem;
         order: 1;
+    }
+
+    .logo-link {
+        font-size: 1.5rem;
     }
 
     .language-switcher {
