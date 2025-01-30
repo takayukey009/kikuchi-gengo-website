@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: takayukey009/kikuchi-gengo-website
+  branch: main
+  base_url: https://api.netlify.com
+
+# これを追加することで、プレビューがブラウザで確認できます
+local_backend: true
+
+# メディアファイルの設定
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# 日本語設定
+locale: 'ja'
+
+# コレクションの設定
+collections:
+  - name: "news"
+    label: "お知らせ"
+    folder: "news/content"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "ID", name: "id", widget: "string", pattern: ['^\d{4}-\d{2}-\d{2}-\d{2}$', "YYYY-MM-DD-NN形式で入力してください"]}
+      - {label: "日付", name: "date", widget: "datetime", format: "YYYY.MM.DD"}
+      - {label: "タイトル（日本語）", name: "title", widget: "string"}
+      - {label: "タイトル（英語）", name: "title_en", widget: "string"}
+      - {label: "タイトル（中国語）", name: "title_zh", widget: "string"}
+      - {label: "カテゴリー", name: "category", widget: "select", options: ["お知らせ", "イベント", "メニュー", "その他"]}
+      - {label: "重要", name: "important", widget: "boolean", default: false}
+      - {label: "本文", name: "body", widget: "markdown"}
