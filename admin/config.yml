@@ -1,8 +1,7 @@
 backend:
-  name: github
-  repo: takayukey009/kikuchi-gengo-website
+  name: git-gateway
   branch: main
-  base_url: https://api.netlify.com
+  repo: takayukey009/kikuchi-gengo-website
 
 # これを追加することで、プレビューがブラウザで確認できます
 local_backend: true
