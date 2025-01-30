@@ -859,7 +859,7 @@ html[lang="en"] .title-line {
     }
 
     .reservation-section h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;  /* 他のセクションタイトルと同じサイズに */
         margin-bottom: 2rem;
     }
 
