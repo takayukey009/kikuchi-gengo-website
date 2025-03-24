@@ -80,7 +80,7 @@ if (typeof translations === 'undefined') {
                 address1: '〒151-0051',
                 address2: '東京都渋谷区千駄ヶ谷2-32-3　外苑キリンビル1階　都立明治公園・国立競技場　の向かい',
                 phone: 'TEL: 070-4376-4298',
-                hours: '営業時間：11:00 - 18:00（金・土11:00-21:00）',
+                hours: '営業時間：【2025年3月まで】11:00 - 18:00（金・土11:00-21:00）\n【2025年4月から】月～金 ランチ11:00～14:00・ディナー17:00～21:00、土 11:00～21:00、日 11:00～18:00',
                 closed: '定休日：火曜日'
             },
             reservation: {
@@ -182,7 +182,7 @@ if (typeof translations === 'undefined') {
                 address1: '〒151-0051',
                 address2: '1F Gaien Kirin Building, 2-32-3 Sendagaya, Shibuya-ku, Tokyo (Across from Meiji Park and National Stadium)',
                 phone: 'TEL: 070-4376-4298',
-                hours: 'Hours: 11:00 - 18:00 (Fri & Sat 11:00-21:00)',
+                hours: 'Hours: [Until March 2025] 11:00 - 18:00 (Fri & Sat 11:00-21:00)\n[From April 2025] Mon-Fri Lunch 11:00-14:00 & Dinner 17:00-21:00, Sat 11:00-21:00, Sun 11:00-18:00',
                 closed: 'Closed: Tuesdays'
             },
             reservation: {
@@ -285,7 +285,7 @@ if (typeof translations === 'undefined') {
                 address1: '〒151-0051',
                 address2: '东京都涩谷区千驮谷2-32-3 外苑麒麟大厦1楼（明治公园・国立竞技场对面）',
                 phone: '电话: 070-4376-4298',
-                hours: '营业时间：11:00 - 18:00（周五・周六11:00-21:00）',
+                hours: '营业时间：【2025年3月为止】11:00 - 18:00（周五・周六11:00-21:00）\n【2025年4月起】周一至周五 午餐11:00～14:00・晚餐17:00～21:00，周六 11:00～21:00，周日 11:00～18:00',
                 closed: '休息日：周二'
             },
             reservation: {
