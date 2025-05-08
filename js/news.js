@@ -4,51 +4,30 @@ async function loadNews() {
         const newsList = document.getElementById('news-list');
         if (!newsList) return;
 
-        // 既知のニュースファイル名を直接指定
-        const newsFiles = [
-            '2025-03-25-01.json',  // 営業時間変更のお知らせ
-            '2025-03-20-01.json',  // 4月のイベント情報
-            '2025-01-30-01.json'   // 1周年記念のお知らせ
-        ];
+        // data.jsonファイルから動的にニュースデータを取得
+        const response = await fetch('/news/data.json');
+        if (!response.ok) {
+            console.error('Failed to load news data:', response.status);
+            return;
+        }
+        const data = await response.json();
         
-        // 各JSONファイルの内容を読み込む
-        const newsItems = await Promise.all(
-            newsFiles.map(async file => {
-                try {
-                    // 相対パスを使用
-                    const response = await fetch(`/news/data/${file}`);
-                    if (!response.ok) {
-                        console.error(`Failed to load ${file}:`, response.status);
-                        return null;
-                    }
-                    const item = await response.json();
-                    return item;
-                } catch (error) {
-                    console.error(`Error loading ${file}:`, error);
-                    return null;
-                }
-            })
-        );
-
-        // nullを除外し、日付でソート
-        const sortedNews = newsItems
-            .filter(item => item)
-            .sort((a, b) => {
-                const dateA = new Date(a.date.replace(/\./g, '-'));
-                const dateB = new Date(b.date.replace(/\./g, '-'));
-                return dateB - dateA;  // 新しい順
-            });
+        // ニュースアイテムを取得
+        const newsItems = data.news || [];
         
         // ニュースリストをクリア
         newsList.innerHTML = '';
         
-        // ニュースアイテムを表示
-        sortedNews.forEach(newsItem => {
+        // ニュースアイテムを表示（3件まで）
+        const displayCount = Math.min(newsItems.length, 3);
+        
+        for (let i = 0; i < displayCount; i++) {
+            const newsItem = newsItems[i];
             const newsElement = document.createElement('a');  // aタグを使用
             newsElement.className = 'news-item';
             newsElement.style.textDecoration = 'none';  // 下線を消す
             newsElement.style.color = 'inherit';  // 親要素の文字色を継承
-            newsElement.href = newsItem.content;  // 詳細ページへのリンク
+            newsElement.href = `/news/${newsItem.content}`;  // 詳細ページへのリンク
             
             if (newsItem.important) {
                 newsElement.classList.add('important');
@@ -69,7 +48,7 @@ async function loadNews() {
             newsElement.appendChild(date);
             newsElement.appendChild(title);
             newsList.appendChild(newsElement);
-        });
+        }
     } catch (error) {
         console.error('Error loading news:', error);
     }
