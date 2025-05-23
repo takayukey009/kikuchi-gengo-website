@@ -18,8 +18,11 @@ async function loadNews() {
         // ニュースリストをクリア
         newsList.innerHTML = '';
         
-        // ニュースアイテムを表示（3件まで）
-        const displayCount = Math.min(newsItems.length, 3);
+        // 現在のページがニュース一覧ページかどうかを確認
+        const isNewsListPage = window.location.pathname.includes('/news/list');
+        
+        // ニュース一覧ページではすべてのニュースを表示、それ以外のページでは3件まで表示
+        const displayCount = isNewsListPage ? newsItems.length : Math.min(newsItems.length, 3);
         
         for (let i = 0; i < displayCount; i++) {
             const newsItem = newsItems[i];

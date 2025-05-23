@@ -1,6 +1,18 @@
 {
   "news": [
     {
+      "id": "2025-05-23-01",
+      "date": "2025.05.23",
+      "title": "6月のイベント情報",
+      "title_en": "June Event Information",
+      "title_zh": "六月活动信息",
+      "category": "お知らせ",
+      "category_en": "Notice",
+      "category_zh": "通知",
+      "content": "2025-05-23-01.html",
+      "important": false
+    },
+    {
       "id": "2025-05-08-01",
       "date": "2025.05.08",
       "title": "5月のイベント情報",
