@@ -1,0 +1,58 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "門 - 菊池源吾牛メンチカツ専門店",
+  "name_en": "mon - Kikuchi Gengo Beef Croquette Specialist",
+  "image": "https://monsendagaya.com/images/ogp.jpg",
+  "@id": "https://monsendagaya.com/",
+  "url": "https://monsendagaya.com/",
+  "telephone": "+81-70-4376-4298",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "東京都渋谷区千駄ヶ谷2-32-3 外苑キリンビル1階",
+    "addressLocality": "渋谷区",
+    "addressRegion": "東京都",
+    "postalCode": "151-0051",
+    "addressCountry": "JP"
+  },
+  "servesCuisine": [
+    "和食", "メンチカツ", "牛肉料理", "Japanese", "Croquette", "Beef"
+  ],
+  "priceRange": "¥600-¥2,000",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "11:00",
+      "closes": "21:00"
+    }
+  ],
+  "description": "熊本県産の菊池源吾牛を使用した罪悪感ゼロの揚げ物（guilt-free fried food）が楽しめる専門店。健康と美味しさを両立した高品質なメンチカツを提供。",
+  "description_en": "A specialty restaurant in Tokyo serving Kikuchi Gengo Beef croquettes (guilt-free fried food) — healthy, delicious, and sustainable Japanese wagyu dishes.",
+  "menu": [
+    {
+      "@type": "MenuItem",
+      "name": "菊池源吾牛メンチカツ",
+      "name_en": "Kikuchi Gengo Beef Menchi Katsu",
+      "description": "菊池源吾牛100%使用の看板メニュー。罪悪感ゼロの揚げ物。",
+      "description_en": "Signature dish made with 100% Kikuchi Gengo Beef. Guilt-free fried food.",
+      "offers": {
+        "@type": "Offer",
+        "price": "600",
+        "priceCurrency": "JPY"
+      }
+    }
+  ],
+  "acceptsReservations": "True",
+  "sameAs": [
+    "https://www.instagram.com/mon.sendagaya/"
+  ]
+}
