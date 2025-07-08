@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="zu38cyyGZf9AmZMdkAUSzy9Oc9zleFp0JvsHGpF_pO0">
-    <meta name="description" content="熊本県産の菊池源吾牛を使用した極上のメンチカツを提供する専門店「門」。伝統的な和の趣と現代的なエッセンスが調和した空間で、贅沢なひとときをお過ごしください。" data-translate="meta.description">
+    <meta name="description" content="熊本県産の菊池源吾牛を使用した極上のメンチカツを提供する専門店「門」。伝統的な和の趣と現代的なエッセンスが調和した空間で、贅沢なひとときをお過ごしください。">
     <meta name="keywords" content="菊池源吾牛, メンチカツ, 熊本グルメ, 和食, 門, mon, 高級メンチカツ, 熊本県, 菊池市">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://monsendagaya.com/">
-    <meta property="og:title" content="門 - 菊池源吾牛メンチカツ専門店" data-translate="meta.title">
-    <meta property="og:description" content="熊本県産の菊池源吾牛を使用した極上のメンチカツを提供する専門店「門」。伝統的な和の趣と現代的なエッセンスが調和した空間で、贅沢なひとときをお過ごしください。" data-translate="meta.description">
+    <meta property="og:title" content="門 - 菊池源吾牛メンチカツ専門店">
+    <meta property="og:description" content="熊本県産の菊池源吾牛を使用した極上のメンチカツを提供する専門店「門」。伝統的な和の趣と現代的なエッセンスが調和した空間で、贅沢なひとときをお過ごしください。">
     <meta property="og:image" content="https://monsendagaya.com/images/ogp.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -19,15 +19,15 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://monsendagaya.com/">
-    <meta name="twitter:title" content="門 - 菊池源吾牛メンチカツ専門店" data-translate="meta.title">
-    <meta name="twitter:description" content="熊本県産の菊池源吾牛を使用した極上のメンチカツを提供する専門店「門」。伝統的な和の趣と現代的なエッセンスが調和した空間で、贅沢なひとときをお過ごしください。" data-translate="meta.description">
+    <meta name="twitter:title" content="門 - 菊池源吾牛メンチカツ専門店">
+    <meta name="twitter:description" content="熊本県産の菊池源吾牛を使用した極上のメンチカツを提供する専門店「門」。伝統的な和の趣と現代的なエッセンスが調和した空間で、贅沢なひとときをお過ごしください。">
     <meta name="twitter:image" content="https://monsendagaya.com/images/ogp.jpg">
     <meta name="robots" content="index, follow">
     <meta name="author" content="門">
     <meta name="geo.region" content="JP">
     <meta name="geo.placename" content="熊本県菊池市">
     <link rel="canonical" href="https://[あなたのドメイン]">
-    <title data-translate="title">門 - 菊池源吾牛メンチカツ専門店 | 熊本県菊池市</title>
+    <title>門 - 菊池源吾牛メンチカツ専門店 | 熊本県菊池市</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,11 +39,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Preload hero image -->
     <link rel="preload" as="image" href="images/hero-bg.jpg">
-    <!-- Language Scripts -->
+    <!-- Night Mode CSS -->
+    <link rel="stylesheet" href="css/night-mode.css">
+    <!-- Custom Review Widget CSS -->
+    <link rel="stylesheet" href="css/review-widget-custom.css">
+    <!-- Header Hours CSS -->
+    <link rel="stylesheet" href="css/header-hours.css">
+    <!-- Wine Menu CSS -->
+    <link rel="stylesheet" href="css/wine-menu.css">
+    <!-- Scripts -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script src="js/translations.js" defer></script>
-    <script src="js/language-switcher.js" defer></script>
     <script src="js/scroll.js" defer></script>
+    <script src="js/mode-switcher.js" defer></script>
+    <script src="js/night-menu.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -51,28 +59,57 @@
             <div class="container">
                 <a href="#top" class="logo-link">門</a>
                 <div class="nav-links">
-                    <a href="#news" class="nav-link" data-translate="nav.news">お知らせ</a>
-                    <a href="#about" class="nav-link" data-translate="nav.about">菊池源吾牛について</a>
-                    <a href="#menu" class="nav-link" data-translate="nav.menu">メニュー</a>
-                    <a href="#reservation" class="nav-link" data-translate="nav.reservation">ご予約</a>
-                    <a href="#location" class="nav-link" data-translate="nav.location">アクセス</a>
-                    <a href="#reviews" class="nav-link" data-translate="nav.reviews">お客様の声</a>
+                    <a href="#news" class="nav-link">お知らせ</a>
+                    <a href="#about" class="nav-link">菊池源吾牛について</a>
+                    <a href="#menu" class="nav-link">メニュー</a>
+                    <a href="#reservation" class="nav-link">ご予約</a>
+                    <a href="#location" class="nav-link">アクセス</a>
+                    <a href="#reviews" class="nav-link">お客様の声</a>
                 </div>
-                <div class="language-switcher">
-                    <button class="lang-btn" data-lang="ja">日本語</button>
-                    <button class="lang-btn" data-lang="en">English</button>
-                    <button class="lang-btn" data-lang="zh-CN">中文</button>
+                <div class="header-controls">
+                    <div class="operating-status">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">営業時間外</span>
+                    </div>
+                    <div class="hours-dropdown">
+                        <button class="hours-btn"><i class="far fa-clock"></i> 営業時間</button>
+                        <div class="hours-content">
+                            <div class="hours-item">
+                                <span class="day-name">平日</span>
+                                <span class="day-hours">昼 11:00-14:00<br>夜 17:00-21:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day-name">土曜</span>
+                                <span class="day-hours">昼 11:00-17:00<br>夜 17:00-21:00</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day-name">日曜</span>
+                                <span class="day-hours">昼 11:00-18:00<br>夜 休み</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day-name">火曜</span>
+                                <span class="day-hours">定休日</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mode-switcher">
+                        <button class="mode-btn active" data-mode="day">昼の部（門）</button>
+                        <button class="mode-btn" data-mode="night">夜の部（MON）</button>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <div id="top" class="hero" role="banner" style="background-image: url('images/hero-bg.jpg');">
+        <div id="top" class="hero" role="banner">
             <h1>
-                <span class="title-line" data-translate="hero.title">菊池源吾牛メンチカツ</span>
-                <span class="title-line shop-name" data-translate="hero.shopName">「門」</span>
-                <span class="title-line">罪悪感ゼロの揚げ物</span>
+                <span class="title-line day-title">菊池源吾牛メンチカツ</span>
+                <span class="title-line night-title" style="display: none;">ワインバー</span>
+                <span class="title-line shop-name day-shop-name">「門」</span>
+                <span class="title-line shop-name night-shop-name" style="display: none;">「MON」</span>
+                <span class="title-line day-subtitle">罪悪感ゼロの揚げ物</span>
+                <span class="title-line night-subtitle" style="display: none;">厳選ワインと菊池源吾牛</span>
             </h1>
             <div class="scroll-indicator" aria-hidden="true">
                 <span>Scroll</span>
@@ -82,10 +119,10 @@
 
         <section id="news" class="section news" aria-labelledby="news-title">
             <div class="container">
-                <h2 id="news-title" class="section-title" data-translate="news.title">お知らせ</h2>
+                <h2 id="news-title" class="section-title">お知らせ</h2>
                 <div id="news-list" role="list"></div>
                 <div class="news-more">
-                    <a href="news/list.html" class="more-link" data-translate="news.more">
+                    <a href="news/list.html" class="more-link">
                         一覧をみる
                         <i class="fas fa-chevron-right"></i>
                     </a>
@@ -95,57 +132,43 @@
 
         <section id="about" class="section about" aria-labelledby="about-title">
             <div class="container">
-                <h2 id="about-title" class="section-title" data-translate="about.title">菊池源吾牛について</h2>
+                <h2 id="about-title" class="section-title">菊池源吾牛について</h2>
                 <div class="about-content">
                     <div class="about-main">
                         <div class="about-text">
-                            <p class="about-description" data-translate="about.description">菊池源吾牛｜罪悪感ゼロの揚げ物を実現した高品質牛肉</p>
                             
-                            <div class="about-section quality-section">
-                                <h3 data-translate="about.quality.title">■ 健康配慮の「オメガ3リッチ」肉質</h3>
-                                <ul class="feature-list">
-                                    <li>
-                                        <span class="feature-label" data-translate="about.quality.feed_label">アマニ種子配合飼料</span>
-                                        <span class="feature-description" data-translate="about.quality.feed">脂質にオメガ3脂肪酸（α-リノレン酸）を含有。青魚のようなサラサラ脂が特徴。</span>
-                                    </li>
-                                    <li>
-                                        <span class="feature-label" data-translate="about.quality.health_label">揚げても罪悪感ゼロ</span>
-                                        <span class="feature-description" data-translate="about.quality.health">オメガ3とオメガ6の黄金比率(1:4)を実現。揚げ物にしても胃もたれしにくく、美容と健康に貢献。</span>
-                                    </li>
-                                    <li>
-                                        <span class="feature-label" data-translate="about.quality.welfare_label">牛の健全育成</span>
-                                        <span class="feature-description" data-translate="about.quality.welfare">代謝疾患リスクを抑えた飼育法で、品質と動物福祉を両立。</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="about-image-container">
-                            <img src="images/about-img.jpg" alt="菊池源吾牛" class="about-image" loading="eager" decoding="sync">
                         </div>
                     </div>
-
-                    <div class="about-section farming-section">
-                        <h3 data-translate="about.farming.title">■ 揚げ物にしても美味しい理由</h3>
-                        <p class="farming-intro" data-translate="about.farming.intro">菊池源吾牛は特殊飼育により、揚げても美味しく食べられる牛肉として注目されています。</p>
-                        <ul class="feature-list">
-                            <li>
-                                <span class="feature-label" data-translate="about.farming.resources_label">サラサラな脂質</span>
-                                <span class="feature-description" data-translate="about.farming.resources">青魚に含まれるような良質なオメガ3脂肪酸が豊富で、天ぷらやから揚げにしても胃にもたれにくい。</span>
-                            </li>
-                            <li>
-                                <span class="feature-label" data-translate="about.farming.environment_label">美味しさと健康の両立</span>
-                                <span class="feature-description" data-translate="about.farming.environment">従来の牛肉では難しかった「揚げ物の美味しさ」と「健康」の両立を実現。</span>
-                            </li>
-                            <li>
-                                <span class="feature-label" data-translate="about.farming.sustainability_label">持続可能な食文化</span>
-                                <span class="feature-description" data-translate="about.farming.sustainability">「罪悪感ゼロ」の揚げ物を通じて、健康志向の方にも楽しんでいただける新しい食文化を提案。</span>
-                            </li>
-                        </ul>
+                    <div class="kikuchi-features card-modern">
+                        <article class="kikuchi-feature accent-blue" tabindex="0">
+                            <h3 class="card-title">オメガ3リッチな肉質</h3>
+                            <p class="card-body">脂質にオメガ3脂肪酸（α-リノレン酸）を含有。青魚のようなサラサラ脂が特徴。</p>
+                        </article>
+                        <article class="kikuchi-feature accent-cyan" tabindex="0">
+                            <h3 class="card-title">黄金比率の脂質</h3>
+                            <p class="card-body">オメガ3とオメガ6の黄金比率(1:4)を実現。揚げ物にしても胃もたれしにくく、美容と健康に貢献。</p>
+                        </article>
+                        <article class="kikuchi-feature accent-green" tabindex="0">
+                            <h3 class="card-title">健全な育成法</h3>
+                            <p class="card-body">代謝疾患リスクを抑えた飼育法で、品質と動物福祉を両立。</p>
+                        </article>
+                        <article class="kikuchi-feature accent-red" tabindex="0">
+                            <h3 class="card-title">サラサラな脂質</h3>
+                            <p class="card-body">青魚に含まれるような良質なオメガ3脂肪酸が豊富で、天ぷらやから揚げにしても胃にもたれにくい。</p>
+                        </article>
+                        <article class="kikuchi-feature accent-purple" tabindex="0">
+                            <h3 class="card-title">美味しさと健康の両立</h3>
+                            <p class="card-body">従来の牛肉では難しかった「揚げ物の美味しさ」と「健康」の両立を実現。</p>
+                        </article>
+                        <article class="kikuchi-feature accent-orange" tabindex="0">
+                            <h3 class="card-title">新しい食文化の提案</h3>
+                            <p class="card-body">「罪悪感ゼロ」の揚げ物を通じて、健康志向の方にも楽しんでいただける新しい食文化を提案。</p>
+                        </article>
                     </div>
 
                     <div class="about-section philosophy-section">
-                        <h3 data-translate="about.philosophy.title">■ 生産者の想い</h3>
-                        <p class="philosophy-message" data-translate="about.philosophy.message">「健康に配慮しながらも、美味しく食べられる食材を提供する」という想いから生まれた菊池源吾牛。揚げ物好きな方も安心して召し上がれます。</p>
+                        <h3 class="section-title">■ 生産者の想い</h3>
+                        <p class="philosophy-message">「健康に配慮しながらも、美味しく食べられる食材を提供する」という想いから生まれた菊池源吾牛。揚げ物好きな方も安心して召し上がれます。</p>
                     </div>
                 </div>
             </div>
@@ -153,46 +176,85 @@
 
         <section id="menu" class="section menu">
             <div class="container">
-                <h2 class="section-title" data-translate="nav.menu">メニュー</h2>
-                <div class="menu-items">
+                <h2 class="section-title">メニュー</h2>
+                <!-- 時間帯によって切り替わるメニューセクション -->
+                <!-- 昨のメニュー（門） -->
+                <div id="day-menu" class="menu-items day-mode">
                     <div class="menu-item">
                         <img src="images/menu-1.jpg" alt="菊池源吾牛メンチカツ" class="menu-image" loading="lazy">
                         <div class="menu-content">
-                            <h3 data-translate="menu.menchikatsu.title">菊池源吾牛メンチカツ</h3>
-                            <p data-translate="menu.menchikatsu.description">菊池源吾牛を100%使用した門の看板メニュー。</p>
-                            <p class="price" data-translate="menu.menchikatsu.price">¥600</p>
+                            <h3>菊池源吾牛メンチカツ</h3>
+                            <p>菊池源吾牛を100%使用した門の看板メニュー。</p>
+                            <p class="price">￥600</p>
                         </div>
                     </div>
                     <div class="menu-item">
                         <img src="images/menu-2.jpg" alt="菊池源吾牛タコライス" class="menu-image" loading="lazy">
                         <div class="menu-content">
-                            <h3 data-translate="menu.tacorice.title">菊池源吾牛タコライス</h3>
-                            <p data-translate="menu.tacorice.description">菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。</p>
-                            <p class="price" data-translate="menu.tacorice.price">¥1,500</p>
+                            <h3>菊池源吾牛タコライス</h3>
+                            <p>菊池源吾牛のひき肉と新鮮な野菜を使用した、和牛で楽しむタコライス。</p>
+                            <p class="price">￥1,500</p>
                         </div>
                     </div>
                     <div class="menu-item">
                         <img src="images/menu-3.jpg" alt="「門」サンド" class="menu-image" loading="lazy">
                         <div class="menu-content">
-                            <h3 data-translate="menu.sandwich.title">「門」サンド</h3>
-                            <p data-translate="menu.sandwich.description">菊池源吾牛を100%使用したメンチカツサンド。</p>
-                            <p class="price" data-translate="menu.sandwich.price">¥1,500</p>
+                            <h3>「門」サンド</h3>
+                            <p>菊池源吾牛を100%使用したメンチカツサンド。</p>
+                            <p class="price">￥1,500</p>
                         </div>
                     </div>
                     <div class="menu-item">
                         <img src="images/menu-4.jpg" alt="門のごはんセット" class="menu-image" loading="lazy">
                         <div class="menu-content">
-                            <h3 data-translate="menu.set.title">門のごはんセット</h3>
-                            <p data-translate="menu.set.description">菊池源吾牛メンチカツ定食。※3種類ございます。写真はAセット。</p>
-                            <p class="price" data-translate="menu.set.price">¥1,200～¥2,000</p>
+                            <h3>門のごはんセット</h3>
+                            <p>菊池源吾牛メンチカツ定食。※3種類ございます。写真はAセット。</p>
+                            <p class="price">￥1,200～￥2,000</p>
                         </div>
                     </div>
                     <div class="menu-item">
                         <img src="images/menu-5.jpg" alt="「門」ハヤシライス" class="menu-image" loading="lazy">
                         <div class="menu-content">
-                            <h3 data-translate="menu.hayashi.title">「門」ハヤシライス</h3>
-                            <p data-translate="menu.hayashi.description">菊池源吾牛を使用した特製ハヤシライス</p>
-                            <p class="price" data-translate="menu.hayashi.price">¥1,800</p>
+                            <h3>「門」ハヤシライス</h3>
+                            <p>菊池源吾牛を使用した特製ハヤシライス</p>
+                            <p class="price">¥1,800</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 夜のメニュー（MONワインバー） -->
+                <div id="night-menu" class="menu-items night-mode">
+
+                    <div class="night-menu-section">
+                        <h3 class="night-menu-heading">今週のワイン</h3>
+                        <p class="night-menu-price">ALL ¥1,100</p>
+                        <div class="wine-items">
+                            <div class="wine-item">
+                                <span class="wine-type">WHITE WINE</span>・アメリカ（原産国：アメリカ）
+                                <span class="wine-name">GOT GRAPES Orange Muscat</span>
+                                <span class="wine-desc">100% Orange Muscat</span>
+                            </div>
+                            <div class="wine-item">
+                                <span class="wine-type">RED WINE</span>・イタリア（原産国：イタリア）
+                                <span class="wine-name">JOHA</span>
+                                <span class="wine-desc">Primitivo 80%, Susumaniello 20%</span>
+                            </div>
+                            <div class="wine-item">
+                                <span class="wine-type">SPARKLING WINE</span>・イタリア（原産国：イタリア）
+                                <span class="wine-name">La Jara</span>
+                                <span class="wine-desc">100% Pinot Noir (Blanc de Noir)</span>
+                            </div>
+                            <div class="wine-item">
+                                <span class="wine-type">SPARKLING WINE</span>・イタリア（原産国：イタリア）
+                                <span class="wine-name">プロセッコ ミレジマート</span>
+                                <span class="wine-desc">100% Glera</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="night-menu-section">
+                        <h3 class="night-menu-heading">FOOD</h3>
+                        <div class="food-items">
+                            <!-- フードメニューは動的に読み込まれます -->
                         </div>
                     </div>
                 </div>
@@ -200,20 +262,20 @@
         </section>
 
         <section id="reservation" class="reservation-section">
-            <h2 data-translate="reservation.title">ご予約</h2>
+            <h2>ご予約</h2>
             <div class="reservation-options">
                 <div class="reservation-option takeout">
-                    <h3 data-translate="reservation.takeoutTitle">テイクアウト・お弁当予約</h3>
+                    <h3>テイクアウト・お弁当予約</h3>
                     <p class="phone-number">
                         <i class="fas fa-phone"></i>
                         <a href="tel:070-4376-4298">070-4376-4298</a>
                     </p>
                 </div>
                 <div class="reservation-option dine-in">
-                    <h3 data-translate="reservation.dineInTitle">お席のご予約</h3>
+                    <h3>お席のご予約</h3>
                     <a href="https://tabelog.com/tokyo/A1309/A130901/13295618/" target="_blank" class="tabelog-button">
                         <i class="fas fa-utensils"></i>
-                        <span data-translate="reservation.tabelogButton">食べログで予約</span>
+                        <span>食べログで予約</span>
                     </a>
                 </div>
             </div>
@@ -221,7 +283,7 @@
 
         <section id="location" class="section location">
             <div class="container">
-                <h2 class="section-title" data-translate="location.title">アクセス</h2>
+                <h2 class="section-title">アクセス</h2>
                 <div class="map-container">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6481.090737506543!2d139.70580232836583!3d35.67598687027955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d84bb96629f%3A0xe019434a4623800b!2z6ZaA77yI44Oi44Oz77yJ!5e0!3m2!1sja!2sjp!4v1706074589099!5m2!1sja!2sjp"
@@ -234,18 +296,18 @@
                     </iframe>
                 </div>
                 <div class="location-info">
-                    <p data-translate="location.address1">〒151-0051</p>
-                    <p data-translate="location.address2">東京都渋谷区千駄ヶ谷2-32-3　外苑キリンビル1階　都立明治公園・国立競技場　の向かい</p>
-                    <p data-translate="location.phone">TEL: 070-4376-4298</p>
-                    <p data-translate="location.hours">営業時間：17:00 ～ 21:00（火・日を除く）<br>定休日：火曜日・日曜日</p>
+                    <p>〒151-0051</p>
+                    <p>東京都渋谷区千駄ヶ谷2-32-3　外苑キリンビル1階　都立明治公園・国立競技場　の向かい</p>
+                    <p>TEL: 070-4376-4298</p>
+
                 </div>
             </div>
         </section>
 
         <section id="reviews" class="section reviews">
             <div class="container">
-                <h2 class="section-title" data-translate="reviews.title">お客様の声</h2>
-                <div class="reviews-widget">
+                <h2 class="section-title">お客様の声</h2>
+                <div class="reviews-widget wine-reviews">
                     <script src="https://static.elfsight.com/platform/platform.js" async></script>
                     <div class="elfsight-app-0fd1e27d-6715-47cb-a78d-f4296094109f" data-elfsight-app-lazy></div>
                 </div>
@@ -261,13 +323,12 @@
             <div class="container">
                 <div class="footer-content">
                     <div class="footer-logo">mon</div>
-                    <p class="footer-copyright" data-translate="footer.copyright">&copy; 2025 mon. All rights reserved.</p>
+                    <p class="footer-copyright">&copy; 2025 mon. All rights reserved.</p>
                 </div>
             </div>
         </footer>
     </main>
-    <script src="js/translations.js" defer></script>
-    <script src="js/language-switcher.js" defer></script>
+    <script src="js/mode-switcher.js" defer></script>
     <script src="js/news.js" defer></script>
     <script src="js/scroll.js" defer></script>
 </body>
