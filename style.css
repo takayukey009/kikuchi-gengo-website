@@ -24,6 +24,22 @@ body {
     background-color: var(--background-color);
 }
 
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 0 1rem;
+}
+
 /* Header & Navigation */
 .header {
     position: fixed;
@@ -300,7 +316,6 @@ body {
     font-weight: 600;
     color: #d4af37;  /* 金色 */
     margin: 1rem 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero .title-line:last-child {
@@ -576,6 +591,244 @@ html[lang="en"] .title-line {
     color: var(--primary-color);
 }
 
+/* 菊池源吾牛カードスタイル - デイモード */
+.kikuchi-intro {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.kikuchi-features.card-modern {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+@media (max-width: 1024px) {
+    .kikuchi-features.card-modern {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .kikuchi-features.card-modern {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}
+
+.kikuchi-feature {
+    background: #fff !important;
+    border-radius: 14px;
+    padding: 24px 20px 20px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border: 1px solid #e5e7eb;
+    position: relative;
+    outline: none;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 160px;
+}
+.kikuchi-feature .card-title {
+    color: #1f2937;
+}
+.kikuchi-feature .card-body {
+    color: #111 !important;
+    font-weight: 500;
+}
+.kikuchi-feature:focus {
+    box-shadow: 0 0 0 3px #2563eb44, 0 2px 12px rgba(0,0,0,0.07);
+    border: 2px solid #2563eb;
+}
+.kikuchi-feature:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+    z-index: 2;
+}
+.kikuchi-feature .card-icon {
+    display: none; /* アイコンを非表示に */
+}
+.kikuchi-feature .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+    color: #111827; /* より濃い色で視認性向上 */
+}
+.kikuchi-feature .card-body {
+    color: #1f2937; /* より濃い色で視認性向上 */
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 400;
+}
+.kikuchi-feature {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.kikuchi-feature .card-title,
+.kikuchi-feature .card-icon svg {
+    transition: color 0.3s, fill 0.3s;
+}
+.kikuchi-feature:focus .card-title,
+.kikuchi-feature:hover .card-title {
+    color: #0891b2;
+}
+.kikuchi-feature:focus .card-icon svg,
+.kikuchi-feature:hover .card-icon svg {
+    filter: brightness(1.15);
+}
+
+/* アクセントカラーごとの左側ボーダー */
+.kikuchi-feature.accent-blue::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 6px;
+    background: #2563eb;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    top: 0; left: 0;
+}
+.kikuchi-feature.accent-cyan::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 6px;
+    background: #0891b2;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    top: 0; left: 0;
+}
+.kikuchi-feature.accent-green::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 6px;
+    background: #059669;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    top: 0; left: 0;
+}
+.kikuchi-feature.accent-red::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 6px;
+    background: #dc2626;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    top: 0; left: 0;
+}
+.kikuchi-feature.accent-purple::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 6px;
+    background: #7c3aed;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    top: 0; left: 0;
+}
+.kikuchi-feature.accent-orange::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 6px;
+    background: #ea580c;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+/* Aboutセクションのタイトル */
+.about-title {
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: 800;
+    margin: 2.2rem auto 2.7rem;
+    padding-bottom: 0.6rem;
+    color: #1a1616;
+    background: none;
+    border-bottom: 4px solid #c7a56c;
+    display: block;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    max-width: 100%;
+    word-break: keep-all;
+}
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 1024px) {
+    .kikuchi-feature {
+        min-height: 180px;
+        padding: 20px 12px 16px 12px;
+    }
+}
+@media (max-width: 600px) {
+    .kikuchi-feature {
+        min-height: 0;
+        padding: 18px 8px 12px 8px;
+    }
+    .kikuchi-feature .card-title {
+        font-size: 1rem;
+    }
+    .kikuchi-feature .card-body {
+        font-size: 0.95rem;
+    }
+}
+
+
+.kikuchi-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(139, 38, 53, 0.15);
+    background-color: #fff;
+}
+
+.kikuchi-feature:hover h4 {
+    color: #8B2635;
+}
+
+.kikuchi-feature h4 {
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    border: none;
+    padding-bottom: 0;
+}
+
+.kikuchi-feature p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 400;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .kikuchi-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .kikuchi-feature {
+        padding: 1.2rem;
+    }
+}
+
 .about-section {
     background-color: #f9f9f9;
     padding: 2rem;
@@ -757,6 +1010,39 @@ html[lang="en"] .title-line {
 
 .location-info {
     font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Operating Hours */
+.operating-hours {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hours-detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hours-day {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    text-align: center;
+    border-left: 4px solid var(--accent-color);
+}
+
+.hours-day strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.1rem;
 }
 
 .map {
@@ -792,6 +1078,16 @@ html[lang="en"] .title-line {
 @media (max-width: 768px) {
     .instagram-feed {
         padding: 0 1rem;
+    }
+    
+    /* Responsive operating hours */
+    .hours-detail {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .operating-hours {
+        padding: 1rem;
     }
 }
 
@@ -1361,6 +1657,13 @@ html[lang="en"] .title-line {
     margin-bottom: 2rem;
     font-size: 2rem;
     color: var(--text-color);
+}
+
+.about-section.philosophy-section > .section-title {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
 }
 
 .news-list-content #news-list {

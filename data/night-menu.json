@@ -1,0 +1,58 @@
+{
+  "wines": {
+    "title": "今週のワイン",
+    "price": "ALL ¥1,100",
+    "items": [
+      {
+        "category": "WHITE WINE・フランス",
+        "name": "シュヴェルニー・ブラン",
+        "description": "Sauvignon Blanc, Chardonnay"
+      },
+      {
+        "category": "WHITE WINE・スペイン", 
+        "name": "BASE 1r BLANC",
+        "description": "Macabeo 85%, Xarel·lo 15%"
+      },
+      {
+        "category": "RED WINE・イタリア",
+        "name": "JOHA", 
+        "description": "Primitivo 80%, Susumaniello 20%"
+      },
+      {
+        "category": "SPARKLING WINE・イタリア",
+        "name": "プロセッコ ミレジマート",
+        "description": "100% Glera"
+      }
+    ]
+  },
+  "food": {
+    "title": "FOOD",
+    "items": [
+      {
+        "name": "門のメンチ",
+        "price": "¥600",
+        "badge": "オススメ"
+      },
+      {
+        "name": "東京野菜のサラダ",
+        "price": "¥800"
+      },
+      {
+        "name": "十勝産フライドポテト", 
+        "price": "¥550"
+      },
+      {
+        "name": "チーズ3種",
+        "price": "¥800"
+      },
+      {
+        "name": "生ハム",
+        "price": "¥800"
+      },
+      {
+        "name": "本日の小鉢",
+        "price": "¥500〜"
+      }
+    ]
+  }
+}
