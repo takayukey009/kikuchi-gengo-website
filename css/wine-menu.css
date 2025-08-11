@@ -1,0 +1,59 @@
+/* ワインメニュー専用スタイル */
+.wine-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.wine-item {
+  background-color: rgba(26, 22, 22, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.wine-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: rgba(212, 175, 55, 0.2);
+  border-color: #D4AF37;
+}
+
+.wine-type {
+  font-weight: bold;
+  color: #b22222;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.wine-name {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+  display: block;
+}
+
+.wine-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.night-menu-price {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #D4AF37;
+  font-weight: 600;
+  margin: 1rem 0 1.5rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .wine-items {
+    grid-template-columns: 1fr;
+  }
+}
