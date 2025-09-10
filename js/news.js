@@ -5,7 +5,7 @@ async function loadNews() {
         if (!newsList) return;
 
         // data.jsonファイルから動的にニュースデータを取得
-        const response = await fetch('/news/data.json');
+        const response = await fetch(`/news/data.json?d=${Date.now()}`);
         if (!response.ok) {
             console.error('Failed to load news data:', response.status);
             return;
